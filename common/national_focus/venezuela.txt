@@ -1,0 +1,1164 @@
+focus_tree = {
+	id = LS_VEN_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+            original_tag = VEN
+		}
+		
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 1400 y = 850 }	
+
+	focus = {
+		id = VEN_investment
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { 
+			focus = VEN_timor2
+			focus = VEN_fabricas
+			}
+		cost = 10
+		relative_position_id = VEN_timor2
+		x = -2
+		y = 1
+		available = {
+		}
+		completion_reward = { 
+			add_ideas = Investments
+		}
+	}
+
+	focus = {
+		id = VEN_desenvolver_o_interior
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+
+		completion_reward = {
+			
+				random_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+
+				random_owned_state = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_extra_state_shared_building_slots = 1
+				}
+      		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	focus = {
+		id = VEN_construir_fabricas
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = VEN_desenvolver_o_interior }
+		x = 8
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+							is_on_continent = europe
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}				
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = VEN_construir_fabricas_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = VEN_construir_fabricas }
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					arms_factory > 0
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					arms_factory > 0
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							arms_factory > 0
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+							is_on_continent = europe
+						}
+					}					
+				}
+				random_owned_state = {
+					limit = {
+						arms_factory > 0
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+						is_on_continent = europe
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						arms_factory > 0
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+						is_on_continent = europe
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}			
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = arms_factory
+								size > 2
+								include_locked = yes
+							}
+							is_on_continent = europe
+						}
+					}					
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}			
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = VEN_civil_development
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = VEN_desenvolver_o_interior }
+		x = 12
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+                random_owned_state = {
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                        instant_build = yes 
+                    }               
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                    
+                }
+            }
+            search_filters = { FOCUS_FILTER_INDUSTRY }
+		}
+	
+	
+
+	focus = {
+		id = VEN_civil_development2
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = VEN_civil_development }
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+                random_owned_state = {
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                        instant_build = yes 
+                    }               
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                   
+            } 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = VEN_extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = VEN_construir_fabricas_2 }
+		prerequisite = { focus = VEN_civil_development2 }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VEN_minas_de_ferro
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = VEN_extra_tech_slot}
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+            add_resource = {
+                type = steel
+                amount = 12
+                state = 489
+            }				
+		}
+	}	
+	
+	focus = {
+		id = VEN_minas_de_cromio
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = VEN_extra_tech_slot }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {	
+            add_resource = {
+                type = chromium
+                amount = 12
+                state = 489
+            }
+		}
+	}
+	
+	focus = {
+		id = VEN_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = VEN_minas_de_cromio }
+		prerequisite = { focus = VEN_minas_de_ferro }
+		available = {
+		
+		}
+		
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			random_owned_state = {
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                        instant_build = yes 
+                    }               
+                    add_extra_state_shared_building_slots = 5
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }                   
+            } 
+		}
+	}
+	
+	focus = {
+		id = VEN_refineries
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = VEN_infra }
+		available = {
+			
+		}
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 489
+			}
+		
+		}
+	}	
+		
+	focus = {
+		id = VEN_timor
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = VEN_infra }
+		available = {
+			VEN = {
+				controls_state = 307
+			}
+		}
+		x = 12
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		307 = {
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                        instant_build = yes 
+                    }               
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }                   
+            } 
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}		
+
+	focus = {
+		id = VEN_fabricas
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = VEN_refineries }
+		available = {
+		}
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+				}	
+			}	
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}		
+
+	focus = {
+		id = VEN_timor2
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = VEN_timor }
+		available = {
+		}
+		x = 12
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			488 = {
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+		}	
+	}		
+
+
+	focus = {
+		id = VEN_army_primacy
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = VEN_collectivist_ethos}
+		relative_position_id = VEN_collectivist_ethos
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		completion_reward = {
+			army_experience = 5
+			random_owned_state = {
+				limit = {
+					arms_factory > 0
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					arms_factory > 0
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							arms_factory > 0
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}				
+			}
+
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VEN_modernized_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = VEN_army_primacy }
+		x = 0
+		y = 1
+		relative_position_id = VEN_army_primacy
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VEN_modernized_army
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = VEN_army_primacy }
+		x = 2
+		y = 1
+		relative_position_id = VEN_army_primacy
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VEN_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = VEN_modernized_army }
+		x = 0
+		y = 1
+		relative_position_id = VEN_modernized_army
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = special_forces_doctrine
+			}		
+			add_potential_special_forces_tree = yes
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VEN_support_effort
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = VEN_modernized_artillery }
+		x = 0
+		y = 1
+		relative_position_id = VEN_modernized_artillery 
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = support_tech
+				bonus = 1
+				uses = 2
+				category = support_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = VEN_japan_general
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { 
+			focus = VEN_support_effort 
+			focus = VEN_naval_aviation
+			focus = VEN_special_forces
+		}
+		x = -1
+		y = 1
+		relative_position_id = VEN_support_effort
+
+		cost = 10
+
+		available = {
+			#JAP = {
+				#has_war = yes
+			#}
+			#SOV = {
+				#has_war = yes
+			#}
+			#USA = {
+			#	has_war = yes
+			#}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			JAP_sadao_araki={
+			add_corps_commander_role={
+					character = JAP_sadao_araki
+					traits={ organizer JAP_samurai_lineage old_guard harsh_leader infantry_leader desert_fox }
+					skill=5
+					attack_skill=4
+					defense_skill=5
+					planning_skill=4
+					logistics_skill=5
+					legacy_id=101
+				}
+			}
+		}
+	}
+	focus = {
+		id = VEN_german_general
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { 
+			focus = VEN_support_effort 
+			focus = VEN_naval_aviation
+			focus = VEN_special_forces
+		}
+		x = 1
+		y = 1
+		relative_position_id = VEN_support_effort
+
+		cost = 10
+
+		available = {
+			#JAP = {
+				#has_war = yes
+			#}
+			#SOV = {
+				#has_war = yes
+			#}
+			#USA = {
+			#	has_war = yes
+			#}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			GER_sepp_dietrich={
+			add_corps_commander_role={
+					character = GER_sepp_dietrich
+					traits={ substance_abuser old_guard harsh_leader infantry_leader hill_fighter }
+					skill=5
+					attack_skill=4
+					defense_skill=3
+					planning_skill=4
+					logistics_skill=6
+					legacy_id=101
+				}
+			}
+		}
+	}
+	focus = {
+		id = VEN_mare_nostrum
+		icon = GFX_focus_BRA_navy
+
+		prerequisite = { focus = VEN_army_primacy}
+		relative_position_id = VEN_army_primacy
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}	
+		completion_reward = {
+			navy_experience = 50
+			random_owned_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}				
+			}
+
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+
+	focus = {
+		id = VEN_naval_aviation
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = VEN_mare_nostrum }
+		relative_position_id = VEN_mare_nostrum 
+		y = 1
+		x = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_ideas = convoy_slave
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = VEN_salazar
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+		x = 20
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {			
+			add_political_power = 150
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	
+
+	focus = {
+		id = VEN_collectivist_ethos
+		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = VEN_salazar }
+		mutually_exclusive = { focus = POR_liberty_ethos}
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+		}
+		relative_position_id = VEN_salazar
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		completion_reward = {
+			add_timed_idea = { 
+				idea = collectivist_ethos_focus 
+				days = 1095 
+				}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
+	
+	focus = {
+		id = VEN_nationalism_focus
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = VEN_collectivist_ethos}
+		relative_position_id = VEN_collectivist_ethos
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_timed_idea = { idea = por_estado_novo_mod days = 1095 }
+		}
+	}
+
+	
+	focus = {
+		id = VEN_military_youth
+		icon = GFX_focus_generic_conspiracy
+		prerequisite = { focus = VEN_deus_patria_familia }
+		relative_position_id = VEN_deus_patria_familia
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			army_experience = 20
+			#add_ideas = por_military_youth_focus
+			add_ideas = SPA_la_division_azul
+			add_ideas = extensive_conscription
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
+	}
+
+	
+
+	
+	
+
+	focus = {
+		id = VEN_ideological_fanaticism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = VEN_military_youth }
+		relative_position_id = VEN_military_youth
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = ideological_fanaticism_focus
+			add_ideas = service_by_requirement
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+	}
+	
+	
+	focus = {
+		id = VEN_deus_patria_familia
+		icon = GFX_goal_reichsautobahn
+		prerequisite = { focus = VEN_nationalism_focus }
+		relative_position_id = VEN_nationalism_focus
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = por_dpfamilia
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+	}
+
+focus = {
+		id = VEN_call_of_arms
+		icon = GFX_focus_prc_infiltration
+		relative_position_id = VEN_military_youth
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = VEN_military_youth
+		}
+		available = {
+			GER = {
+				has_war = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {	
+			#add_ideas = war_bonds_focus
+			add_ideas = war_economy
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+	}
+
+
+}
