@@ -4,19 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = WST
-		}
-		modifier = {
-			add = 10
-			tag = EST
-		}
-		modifier = {
-			add = 10
 			tag = IRE
-		}
-		modifier = {
-			add = 10
-			tag = LAT
 		}
 		modifier = {
 			add = 10
@@ -29,6 +17,10 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = GRE
+		}
+		modifier = {
+			add = 10
+			tag = CHI
 		}
 		modifier = {
 			add = 10
@@ -56,7 +48,7 @@ focus_tree = {
 		}
 		modifier = {
 			add = 10
-			tag = DEN
+			tag = CZE
 		}
 		modifier = {
 			add = 10
@@ -78,6 +70,15 @@ focus_tree = {
 			add = 10
 			tag = PER
 		}
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+			modifier = {
+			add = 10
+			tag = DEN
+		}
+
 	}
 
 	default = no

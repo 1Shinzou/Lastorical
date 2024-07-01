@@ -34,12 +34,13 @@ is_limited_country = {
 		original_tag = CZE
 		#original_tag = EST
 		#original_tag = LAT
+		original_tag = LIT
 		original_tag = PER
 		original_tag = POL
 		original_tag = SWE
 		original_tag = WST
 		original_tag = IRE
-		#original_tag = POR
+		original_tag = POR
 		#original_tag = NOR
 
 	}

@@ -2461,46 +2461,7 @@
 		}
 	}
 
-	focus = {
-		id = FRA_commit_automobile_manufacturer
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
-		prerequisite = {
-			focus = FRA_arms_purchases_in_the_us
-		}
-		prerequisite = {
-			focus = FRA_defensive_strategems
-		}
-		relative_position_id = FRA_go_with_britain
-		x = 0
-		y = 2
-		
-		ai_will_do = {
-			factor = 2
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			461 = {
-				
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			461 = {
-				
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
+	
 
 	focus = {
 		id = FRA_buy_time
@@ -2603,37 +2564,7 @@
 		}
 	}	
 
-	focus = {
-		id = FRA_defensive_strategems
-		icon = GFX_goal_generic_fortify_city
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = FRA_strengthen_government_support_tooltip
-				NOT = { has_idea = FRA_strengthen_government_support_focus }
-				has_country_flag = FRA_strengthen_government_support_focus_flag
-			}
-		}
-	 	prerequisite = {
-			focus = FRA_go_with_britain
-			focus = FRA_self_defense
-			focus = FRA_strengthen_government_support
-		}
-		x = -1
-		y = 1
-		relative_position_id = FRA_strengthen_government_support
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			remove_ideas = FRA_disjointed_government
-			set_rule = { can_send_volunteers = yes }
-		}
-	}
+	
 
 	focus = {
 		id = FRA_go_with_britain
@@ -2690,7 +2621,7 @@
 	focus = {
 		id = FRA_arms_purchases_in_the_us
 		icon = GFX_goal_generic_build_tank
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = FRA_go_with_britain

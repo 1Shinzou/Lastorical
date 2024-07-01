@@ -6,5 +6,6 @@ tags={
 	"National Focuses"
 	"Balance"
 }
+picture="thumbnail.png"
 name="LASTORICAL"
 supported_version="1.14.7"
