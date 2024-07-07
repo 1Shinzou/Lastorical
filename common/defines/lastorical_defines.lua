@@ -165,3 +165,6 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2  -- vilkata defines , was 
 
 --Thanks Alex
 NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 1  -- Resource cost for conversion
+
+NDefines.NAir.INTERCEPTION_DISTANCE_SCALE = 5000 -- At this many pixels of path length, full interception efficiency is applied to air missions. Lerp from 0.
+NDefines.NAir.INTERCEPTION_DAMAGE_SCALE = 0.0 -- Multiply the interception damage with this value. Works as a cap when interception distance is at maximum.

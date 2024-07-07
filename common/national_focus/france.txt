@@ -773,7 +773,7 @@
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -784,7 +784,7 @@
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2216,6 +2216,7 @@
 
 		available = {
 			has_capitulated = no
+			date > 1947.1.1
 		}
 
 		bypass = {
@@ -4343,41 +4344,7 @@
 			}
 		}
 	}
-	focus = {
-		id = FRA_intervention_in_north_africa
-		icon = GFX_goal_generic_position_armies
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				FRA_controls_north_africa = yes
-			}
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_take_north_africa }
-		}
-	}
+	
 	# focus = {
 	# 	id = FRA_intervention_in_west_africa
 	# 	icon = GFX_goal_generic_position_armies
@@ -4508,12 +4475,7 @@
 			y = 0
 		}
 		prerequisite = {
-			focus = FRA_intervention_in_madagascar
-			focus = FRA_intervention_in_syria
-			focus = FRA_intervention_in_indochina
-			focus = FRA_intervention_in_north_africa
-			focus = FRA_intervention_in_west_africa
-			focus = FRA_intervention_in_central_africa
+			focus = FRA_appeal_to_overseas_territories
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 
@@ -4719,215 +4681,8 @@
 			add_ideas = { FRA_colonial_recruitment }
 		}
 	}
-	focus = {
-		id = FRA_equatorial_african_gold_mining2
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 0
-		y = 1
-		
-		prerequisite = { 
-			focus = FRA_colonial_recruitment
-		}
-		relative_position_id = FRA_colonial_recruitment
-		
-		cost = 10
-		ai_will_do = {
-			factor = 50
-		}
-		available = {
-			OR = {
-				controls_state = 773
-				controls_state = 660
-				controls_state = 772
-				controls_state = 539
-			}			
-		}
-		
-		bypass = {
-
-		}
-		
-		
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			add_ideas = SAF_gold_exports
-			772 = {
-                add_extra_state_shared_building_slots = 3
-            }				
-		}
-	}
-focus = {
-		id = FRA_get_steel
-		icon = GFX_focus_generic_steel
-		cost = 5
-		prerequisite = {
-			focus = FRA_equatorial_african_gold_mining2
-		}
-		relative_position_id = FRA_equatorial_african_gold_mining2
-		x = 0
-		y = 2
-		available = {
-		always = yes
-		}
 	
-		ai_will_do = {
-			factor = 2
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			774 = {
-				add_resource = {
-					type = steel
-					amount = 24
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_improve_equatorial_roads2
-		icon = GFX_focus_generic_africa_infrastructure
-		x = -1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_equatorial_african_gold_mining2
-		}
-		relative_position_id = FRA_equatorial_african_gold_mining2
-		
-		cost = 10
-		ai_will_do = {
-			factor = 20
-		}
-		available = {
-			OR = {
-				controls_state = 773
-				controls_state = 660
-				controls_state = 772
-				controls_state = 539
-			}			
-		}
-		
-		bypass = {
-
-		}
-		
-		
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			773 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 5
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 3
-			}
-			539 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 5
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 3
-			}										
-		}
-	}	
-	focus = {
-		id = FRA_exploit_rubber_vines2
-		icon = GFX_focus_BRA_rubber_war
-		x = 1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_equatorial_african_gold_mining2
-		}
-		relative_position_id = FRA_equatorial_african_gold_mining2
-		
-		cost = 10
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-			OR = {
-				controls_state = 773
-				controls_state = 660
-				controls_state = 772
-				controls_state = 539
-			}
-			
-		}
-		
-		bypass = {
-
-		}
-		
-		
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_RUBBER }
-		completion_reward = {
-			if = {
-				limit = {
-					controls_state = 773
-				}
-				add_resource = {
-					type = rubber
-					amount = 8
-					state = 773
-				}								
-			}
-			if = {
-				limit = {
-					controls_state = 660
-				}
-				add_resource = {
-					type = rubber
-					amount = 4
-					state = 660
-				}								
-			}
-			if = {
-				limit = {
-					controls_state = 772
-				}
-				add_resource = {
-					type = rubber
-					amount = 6
-					state = 772
-				}								
-			}
-			if = {
-				limit = {
-					controls_state = 539
-				}
-				add_resource = {
-					type = rubber
-					amount = 8
-					state = 539
-				}								
-			}
-			add_stability = -0.05									
-		}
-	}		
+	
 	focus = {
 		id = FRA_the_regiment_normandie
 		icon = GFX_focus_fra_regiment_normandie

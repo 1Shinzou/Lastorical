@@ -7741,6 +7741,7 @@ focus_tree = {
 
 		available = {
 			has_defensive_war = yes
+			date > 1943.1.1
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
