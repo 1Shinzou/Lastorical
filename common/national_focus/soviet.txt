@@ -7741,7 +7741,9 @@ focus_tree = {
 
 		available = {
 			has_defensive_war = yes
-			date > 1943.1.1
+			#date > 1942.11.19
+
+			has_completed_focus = SOV_the_glory_of_the_red_army
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -12000,7 +12002,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -12013,7 +12015,9 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_policy_of_individual_security }
 
 		available = {
-
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -12032,7 +12036,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_policy_of_collective_security
-		cost = 5
+		cost = 10
 		
 ai_will_do = {
 			factor = 1
@@ -12083,7 +12087,7 @@ ai_will_do = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_anti_fascist_policies
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
