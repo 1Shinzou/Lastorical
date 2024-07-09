@@ -499,10 +499,6 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-            random_army_leader = {
-                limit = { has_id = 5600 }
-                add_skill_level = 1
-            }
             army_experience = 10
         }
         search_filters = { FOCUS_FILTER_RESEARCH }
@@ -548,11 +544,7 @@ focus_tree = {
             factor = 10
             }
         available_if_capitulated = yes
-        completion_reward = {
-            random_army_leader = {
-                limit = { has_id = 88100 }
-                add_unit_leader_trait = jungle_rat
-            }     
+        completion_reward = {  
             if = {
                 limit = {
                     NOT = {
