@@ -944,6 +944,57 @@ fin_war_eco = {
 		}
 	}
 
+	annex_hol= {
+		# icon = generic_operation
+		allowed = {
+			tag = RAJ
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			HOL = {
+				is_ai = yes
+			}
+			HOL = {
+				has_capitulated = yes
+			}
+		}
+		targets = {
+			HOL	
+		}
+		complete_effect = {
+			HOL = {
+				transfer_units_fraction = {
+					target = RAJ
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			RAJ = {
+				annex_country = {
+					target = HOL
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HOL
+					is_controlled_by = RAJ
+				}
+				add_compliance = 100
+			}
+		}
+	}
+
 
 
 

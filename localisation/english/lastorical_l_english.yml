@@ -11,10 +11,6 @@
  VICTORY_POINTS_10104: "Al Jaghbub"
  VICTORY_POINTS_10869: "Qara Oasis"
 
-
-
-
-
  lastorical_gamerules:0 "Check Gamerules"
  lastorical_gamerules_two:0 "Check Gamerules Continued"
  sov_boost_status:0 "[GetSovBoostStatus]"
@@ -28,6 +24,7 @@
 
  move_capital_to_gabon:0 "Move capital to Gabon"
  move_capital_to_cascablanca:0 "Move capital to Cascablanca"
+
  ITA_demand_crete:0 "Demand Crete"
 
  lastorical_allied_engine_bonus_name:0 "Engine 4 bonus"
@@ -94,6 +91,8 @@ MENU_DISCORD_Lastorical:0 "Lastorical Discord"
  annex_british_raj_desc:0 "Annex the British Raj"
  annex_australia:0 "Annex Australia"
  annex_australia_desc:0 "Annex Austrlia"
+ annex_hol:0 "Annex Netherlands"
+ annex_hol_desc:0 "Annex Netherlands"
  annex_philippines:0 "Annex Philippines"
  annex_philippines_desc:0 "Annex Philippines"
  lastorical_yug:0 "Peace - Treaty of Skopje" 
