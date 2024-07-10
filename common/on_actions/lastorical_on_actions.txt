@@ -841,7 +841,7 @@ on_actions = {
 	SPR = {
 		add_corps_commander_role = {
 			character = SPR_mohamed_meziane
-			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies organizer infantry_leader cavalry_leader panzer_leader trait_engineer ranger trickster }
+			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies organizer infantry_leader cavalry_leader panzer_leader trait_engineer ranger commando trickster }
 			skill=6
 			attack_skill=6
 			defense_skill=4
@@ -850,7 +850,7 @@ on_actions = {
 		}
 		add_corps_commander_role = {
 			character = SPA_juan_yague
-			traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies organizer infantry_leader cavalry_leader commando panzer_leader trait_engineer urban_assault_specialist trickster }
+			traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies organizer infantry_leader cavalry_leader panzer_leader trait_engineer urban_assault_specialist trickster }
 			skill=6
 			attack_skill=6
 			defense_skill=4
