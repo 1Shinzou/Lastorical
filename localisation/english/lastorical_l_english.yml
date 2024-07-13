@@ -73,6 +73,9 @@ MENU_DISCORD_Lastorical:0 "Lastorical Discord"
  Juggle1_desc:0 "The best Juggle Button in HOI IV"
  RESEARCH_TECH_UNUSED:1 "§GClick to research§!\nWithin 50 days, you can choose a new area to research without loss of research time."
 
+ tank_medium_cannon_3:0 "Advanced Medium Cannon"
+ tank_medium_cannon_3_desc:0 "More Firepower is necessary"
+
  SOV_collectivized_society:0 "Collectivized Society"
  peace_training:0 "Peacetime Training"
  ai_limiter:0 "Artificial Intelligence"
