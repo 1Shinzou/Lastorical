@@ -364,38 +364,7 @@ bookmarks = {
 				FIN_greater_finland
 			}
 		}
-		"VEN"={
-			minor = yes
-			history = "VENEZUELA_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				idea_VEN_blockade_inactive
-			}
-			focuses = {
-				VEN_japan_general
-				VEN_desenvolver_o_interior
-				VEN_german_general
-			}
-		}
-		"BRA"={
-			minor = yes
-			history = BRA_GATHERING_STORM_DESC
-			ideology = democratic
-			available = { has_dlc = "Trial of Allegiance" }
-			ideas = {
-				#BRA_undiversified_economy_modifier
-				#SMB_MTG_naval_arms_race_legacy
-				#BRA_aftermath_of_the_coup
-				BRA_undiversified_economy_modifier_dummy_idea
-				BRA_weak_government_dummy_idea
-				BRA_aftermath_of_the_coup_dummy_idea
-			}
-			focuses = {
-				BRA_coffee_crisis_aftermath
-				BRA_tribunal_de_seguranca_nacional
-				BRA_end_the_state_of_emergency
-			}
-		}
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
