@@ -51,8 +51,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 AST = {
-	color = rgb { 57 143 97 }
-	color_ui = rgb { 74 186 126 }
+	color = rgb { 11 7 126 }
+	color_ui = rgb { 11 7 126 }
 }
 USA = {
 	color = rgb { 20 133 237 }
