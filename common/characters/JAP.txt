@@ -36,7 +36,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=fascism_ideology
+			traits={ inexperienced_imperialist }
 			expire="1989.1.1.1"
 			id=-1
 		}
@@ -1104,24 +1105,27 @@ characters={
 	}
 
 	JAP_hideki_tojo={
-		name=JAP_hideki_tojo
+		name="JAP_hideki_tojo"
 		portraits={
 			army={
 				small="GFX_idea_hideki_tojo"
 			}
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_land_2.dds"
+			}
 		}
 		advisor={
 			slot = army_chief
-			idea_token = hideki_tojo
-			allowed = {
+			idea_token = JAP_hideki_tojo
+			allowed  = {
 				original_tag = JAP
 			}
-			traits = {
-				army_chief_morale_2
+			traits  = {
+				army_chief_morale_2 
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1.000
+				factor = 1
 			}
 		}
 	}

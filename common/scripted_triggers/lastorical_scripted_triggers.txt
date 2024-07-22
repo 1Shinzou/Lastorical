@@ -23,7 +23,7 @@ is_playable_country = {
 		original_tag = MEX
 		#original_tag = VIC
 		#original_tag = PHI
-		original_tag = VEN
+		#original_tag = VEN
 	}
 }
 
@@ -42,6 +42,7 @@ is_limited_country = {
 		original_tag = IRE
 		original_tag = POR
 		#original_tag = NOR
+		original_tag = VEN
 
 	}
 }

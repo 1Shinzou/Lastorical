@@ -17,9 +17,9 @@ on_actions = {
 						tag = YUG
 					}
 				}
-		#		YUG = {
-		#			load_oob = "YUG_lastorical_SPAWN"
-		#		}
+				YUG = {
+					load_oob = "YUG_lastorical_SPAWN"
+				}
 			}
 			if = {
 				limit = {

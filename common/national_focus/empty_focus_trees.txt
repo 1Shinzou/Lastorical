@@ -24,6 +24,10 @@ focus_tree = {
 		}
 		modifier = {
 			add = 10
+			tag = VEN
+		}
+		modifier = {
+			add = 10
 			tag = CHI
 		}
 		modifier = {

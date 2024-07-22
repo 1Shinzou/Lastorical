@@ -457,6 +457,15 @@ USA_newport_news_shipbuilding_organization = {
 
 }
 
+USA_raiding_fleet = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_wilton_fijenoord
+	
+	allowed = {	
+		tag = USA
+	}
+}
+
 ###########################
 
 ###  #    ##  #  # ###  ## 

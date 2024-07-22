@@ -172,6 +172,9 @@ sick = {
 	emperor_showa = {
 		random = no
 		stability_factor = 0.6 #FOR THE EMPERAH
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+		army_morale_factor = 0.1
 
 		ai_will_do = {
 			factor = 1

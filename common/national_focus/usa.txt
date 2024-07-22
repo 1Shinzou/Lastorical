@@ -519,6 +519,126 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = USA_lend_lease_act
+		icon = GFX_focus_generic_treaty
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_neutrality_act  }
+		relative_position_id = USA_neutrality_act
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			if = {
+				limit = {
+					has_war_support > 0.4
+				}
+				congress_medium_support_trigger = yes
+			}
+			else = {
+				congress_high_support_trigger = yes
+			}
+			democratic > 0.95
+			custom_trigger_tooltip = {
+				tooltip = USA_lend_lease_act_neutrality_tt
+			}
+			if = {
+				limit = {
+					has_completed_focus = USA_neutrality_act
+				}
+				any_other_country = {
+					is_major = yes
+					has_government = ROOT
+					has_war = yes
+					surrender_progress > 0
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_USA_CONGRESS}
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					is_major = yes
+					has_government = ROOT
+				}
+				ROOT = {
+					add_ai_strategy = {
+						type = support
+						id = PREV
+						value = 200
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = USA_limited_intervention
+				}
+				swap_ideas = {
+					remove_idea = USA_limited_intervention
+					add_idea = USA_lend_lease_act_li
+				}
+			}
+			else_if = {
+				limit = { has_completed_focus = USA_neutrality_act }
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+					}
+					swap_ideas = {
+						remove_idea = USA_neutrality_act_aat
+						add_idea = USA_lend_lease_act_na
+					}
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = USA_neutrality_act
+						add_idea = USA_lend_lease_act_na
+					}
+				}
+			}
+			else = {
+				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
+			}
+			if = {
+				limit = {
+					has_war_support > 0.6
+					has_war = no
+				}
+				USA_congress_small_support = yes
+			}
+			else_if = {
+				limit = {
+					has_war_support > 0.4
+					has_war = no
+				}
+				USA_congress_small_opposition = yes
+			}
+			else_if = {
+				limit = {
+					has_war_support < 0.4
+					has_war = no
+				}
+				USA_congress_large_opposition = yes
+			}
+			else = {
+				USA_congress_medium_opposition = yes
+			}
+		}
+	}
 #   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  # 
 #    #  ## ##  #   #  #   #  #      #  ## #  #  #   #  # #   # #   ## #  #   #  #  # ## # 
 #    #  # # #  #   #  ##  #  #      #  # ##  #  ##  ###   # #  ##  # ##  #   #  #  # # ## 
@@ -746,7 +866,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.3
+				has_war_support > 0.5
 			}
 			democratic > 0.95
 		}
@@ -2977,7 +3097,7 @@ focus = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 26
+		x = 22
 		y = 0
 		offset = {
 			x = -26
@@ -3038,7 +3158,7 @@ focus = {
 	focus = {
 		id = USA_intervention_in_the_americas
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -4
+		x = -3
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -3299,7 +3419,7 @@ focus = {
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
-		x = 4
+		x = 3
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -3460,7 +3580,7 @@ focus = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 16
+		x = 13
 		y = 0
 		relative_position_id = USA_war_plans_division
 		

@@ -397,12 +397,14 @@ lastorical_capitulations_on_actions = {
 			transfer_state = 107
 			transfer_state = 804
             transfer_state = 853
+			transfer_state = 108
+			transfer_state = 802
 		}
 		BUL = {
 			transfer_state = 106
+			add_state_core = 106
 			transfer_state = 803
-			transfer_state = 802
-			transfer_state = 108
+			add_state_core = 803
 			if = {
 				limit = { NOT = { has_idea = peace_training } }
 				add_ideas = peace_training
@@ -449,10 +451,15 @@ lastorical_capitulations_on_actions = {
 				threat = 3.7 
 				name = lastorical_gre
 			}
-			annex_country = {
-				target = GRE
-				transfer_troops = no
-			}
+			transfer_state = 731
+			transfer_state = 184
+		}
+		ITA = {
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 186
+			transfer_state = 187
+			transfer_state = 182
 		}
 	} 
 	# China
@@ -564,10 +571,10 @@ lastorical_capitulations_on_actions_collab = {
 			transfer_state = 105
 			transfer_state = 109
 			transfer_state = 107
-			transfer_state = 108
-			transfer_state = 802
 			transfer_state = 804
             transfer_state = 853
+			transfer_state = 108
+			transfer_state = 802
 			every_state = {
                 limit = {
                     is_core_of = YUG
@@ -608,14 +615,32 @@ lastorical_capitulations_on_actions_collab = {
 				threat = 3.7 
 				name = lastorical_gre
 			}
-			annex_country = {
-				target = GRE
-				transfer_troops = no
+		BUL = {
+			add_named_threat = { 
+				threat = 3.7 
+				name = lastorical_gre
 			}
+			transfer_state = 731
+			transfer_state = 184
+		}
 			every_state = {
                 limit = {
                     is_core_of = GRE
                     is_controlled_by = BUL
+                }
+                add_compliance = 100
+		    }
+		ITA = {
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 186
+			transfer_state = 187
+			transfer_state = 182
+		}
+			every_state = {
+                limit = {
+                    is_core_of = GRE
+                    is_controlled_by = ITA
                 }
                 add_compliance = 100
 		    }

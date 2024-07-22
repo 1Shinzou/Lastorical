@@ -221,7 +221,7 @@ technologies = {
 		
 		
 		category_mountaineers = {
-			max_organisation = 5
+			defense = 0.05
 		}
 		
 		path = {
