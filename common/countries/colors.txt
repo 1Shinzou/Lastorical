@@ -95,8 +95,8 @@ FIN = {
 	color_ui = rgb { 255 255 255 }
 }
 MEX = {
-	color = rgb { 104 152 83 }
-	color_ui = rgb { 135 198 108 }
+	color = rgb { 76 145 63 }
+	color_ui = rgb { 99 189 82 }
 }
 CHI = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
@@ -153,7 +153,7 @@ LAT = {
 	color_ui = rgb { 124 125 184 }
 }
 VEN = {
-	color = rgb { 171 190 152 }
+	color = rgb { 0 0 0 }
 	color_ui = rgb { 222 247 198 }
 }
 WST = {
