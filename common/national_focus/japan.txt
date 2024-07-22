@@ -863,13 +863,13 @@
 		id = JAP_people_owned_mines
 		icon = GFX_goal_generic_construction2
 		prerequisite = { 
-			focus = JAP_tokyo_aluminum_plant	
+			focus = JAP_exploit_the_southern_resource_area	
 		}
 		prerequisite = { 
-			focus = JAP_public_works	
+			focus = JAP_establish_the_northern_resource_area	
 		}
-		x = -1
-		y = 1
+		x = -2
+		y = 2
 		relative_position_id = JAP_public_works
 
 		cost = 10
@@ -900,7 +900,7 @@
 		id = JAP_public_works
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = JAP_coal_liquification}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = JAP_coal_liquification
 		cost = 10
@@ -953,7 +953,7 @@
 		id = JAP_tokyo_aluminum_plant
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = JAP_coal_liquification }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = JAP_coal_liquification
 
@@ -1024,11 +1024,14 @@ focus = {
 		id = JAP_black_dragon_society
 		icon = GFX_focus_SWI_embrace_rote_drei
 		cost = 7
-		prerequisite = { focus = JAP_intervene_in_china }
+		prerequisite = { 
+			focus = JAP_strike_on_the_southern_resource_area
+			focus = JAP_preemptive_war
+		}
 		
-		x = -1
+		x = 1
 		y = 1
-		relative_position_id = JAP_intervene_in_china
+		relative_position_id = JAP_preemptive_war
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1056,7 +1059,7 @@ focus = {
 			focus = JAP_challenge_the_zaibatsus
 			focus = JAP_ally_with_the_zaibatsus
 		}
-		x = 6
+		x = 5
 		y = 3
 
 		cost = 7
@@ -1229,7 +1232,7 @@ focus = {
 		id = JAP_secure_china
 		icon = GFX_focus_chi_one_china_policy
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
@@ -1274,8 +1277,8 @@ focus = {
 		id = JAP_develop_chinese_resources
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = 0
-		y = 3
+		x = -2
+		y = 1
 		relative_position_id = JAP_intervene_in_china
 
 		cost = 10
@@ -1321,10 +1324,14 @@ focus = {
 	focus = {
 		id = JAP_strike_south_doctrine
 		icon = GFX_focus_jap_strike_south
-		prerequisite = { focus = JAP_sign_tripartite_pact }
 		
-		x = 0
-		y = 1
+		prerequisite = { 
+			#focus = JAP_sign_tripartite_pact 
+			focus = JAP_non_aggression_pact_with_the_soviet_union
+		}
+		
+		x = 1
+		y = 2
 		relative_position_id = JAP_sign_tripartite_pact
 
 		cost = 7
@@ -1376,10 +1383,12 @@ focus = {
 	focus = {
 		id = JAP_non_aggression_pact_with_the_soviet_union
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = JAP_intervene_in_china }
-		x = -3
+		prerequisite = { 
+			focus = JAP_sign_tripartite_pact
+		}
+		x = 0
 		y = 1
-		relative_position_id = JAP_intervene_in_china
+		relative_position_id = JAP_sign_tripartite_pact
 		dynamic = yes  
 
 		cost = 10
@@ -1506,17 +1515,13 @@ focus = {
 	focus = {
 		id = JAP_exploit_the_southern_resource_area
 		icon = GFX_goal_generic_construction2
-		
 		prerequisite = { 
-			focus = JAP_strike_on_the_southern_resource_area
-		}
-		prerequisite = { 
-			focus = JAP_develop_chinese_resources
+			focus = JAP_public_works
 		}
 		
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = JAP_develop_chinese_resources
+		relative_position_id = JAP_public_works
 
 		cost = 10
 
@@ -1602,8 +1607,10 @@ focus = {
 	focus = {
 		id = JAP_sign_tripartite_pact
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = JAP_intervene_in_china}
-		x = 3
+		prerequisite = { 
+			focus = JAP_intervene_in_china
+		}
+		x = 0
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
@@ -2206,7 +2213,7 @@ focus = {
 		id = JAP_support_the_kodoha_faction
 		icon = GFX_goal_generic_military_deal
 		mutually_exclusive = { focus = JAP_purge_the_kodoha_faction focus = JAP_the_unthinkable_option focus = JAP_strengthen_civilian_government }
-		x = 6
+		x = 4
 		y = 0
 		relative_position_id = JAP_purge_the_kodoha_faction
 
@@ -2413,7 +2420,7 @@ focus = {
 		prerequisite = {
 			focus = JAP_non_aggression_pact_with_the_soviet_union
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 		dynamic = yes  
@@ -2569,15 +2576,12 @@ focus = {
 		id = JAP_establish_the_northern_resource_area
 		icon = GFX_goal_generic_construction2
 		
-		prerequisite = { 	
-			focus = JAP_preemptive_war
-		}
 		prerequisite = { 
-			focus = JAP_develop_chinese_resources
+			focus = JAP_tokyo_aluminum_plant
 		}
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = JAP_develop_chinese_resources
+		relative_position_id = JAP_tokyo_aluminum_plant
 
 		cost = 10
 
@@ -2939,7 +2943,7 @@ focus = {
 	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
-		x = 15
+		x = 14
 		y = 0
 
 		cost = 8
@@ -3305,7 +3309,7 @@ focus = {
 	focus = {
 		id = JAP_army_expansion_law
 		icon = GFX_goal_generic_army_doctrines
-		x = 7
+		x = 8
 		y = 0
 		relative_position_id = JAP_the_manchurian_project 
 
@@ -3573,7 +3577,7 @@ focus = {
 		id = JAP_fighter_modernization
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = JAP_army_expansion_law focus = JAP_new_naval_estimates }
-		x = 7
+		x = 8
 		y = 2
 		relative_position_id = JAP_army_expansion_law
 
@@ -3717,7 +3721,7 @@ focus = {
 		prerequisite = { focus = JAP_first_air_fleet
 		focus = JAP_range_focus  }
 		
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = JAP_first_air_fleet
 
@@ -3959,7 +3963,7 @@ focus = {
 	focus = {
 		id = JAP_new_naval_estimates
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 14
+		x = 17
 		y = 0
 		relative_position_id = JAP_army_expansion_law
 
