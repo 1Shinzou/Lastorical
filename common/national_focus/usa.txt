@@ -652,7 +652,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 2
 		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
+		prerequisite = { focus = USA_continue_the_new_deal }
 		mutually_exclusive = { focus = USA_limited_intervention }
 		relative_position_id = USA_continue_the_new_deal
 
@@ -866,7 +866,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.5
+				has_war_support > 0.3
 			}
 			democratic > 0.95
 		}
