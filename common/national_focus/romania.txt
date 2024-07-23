@@ -1574,16 +1574,16 @@ focus_tree = {
 		id = ROM_invest_in_the_iar
 		icon = GFX_goal_generic_air_production
 		prerequisite = {
-			focus = ROM_acquire_fighters
+			focus = ROM_cas
 			#focus = ROM_medium_bombers
 		}
 		prerequisite = {
 			#focus = ROM_acquire_fighters
-			focus = ROM_medium_bombers
+			focus = ROM_iar_80
 		}
 		x = 1
 		y = 1
-		relative_position_id =ROM_acquire_fighters
+		relative_position_id = ROM_iar_80
 
 		cost = 10
 
