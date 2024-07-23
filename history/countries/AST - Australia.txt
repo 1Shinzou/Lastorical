@@ -3,7 +3,6 @@
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
-set_research_slots = 3
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -21,10 +20,6 @@ set_technology = {
 
 	fleet_in_being = 1
 }
-add_ideas = {
-	AST_R56_great_depression_1
-	AST_R56_memories_of_gallipoli
-}s
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -139,8 +134,7 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	AST_R56_great_depression_1
-	AST_R56_memories_of_gallipoli
+	add_ideas = AST_great_depression_1
 
 	add_to_tech_sharing_group = commonwealth_research
 }
@@ -188,8 +182,6 @@ if = {
 	}
 
 	add_ideas = {
-		add_ides = AST_R56_great_depression_1
-	    add_ides = AST_R56_memories_of_gallipoli
 		#laws		
 		volunteer_only
 		low_economic_mobilisation
