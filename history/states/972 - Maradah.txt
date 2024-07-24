@@ -1,8 +1,7 @@
 state={
-	id=662
-	name="STATE_662"
-	manpower = 13213
-	
+	id=972
+	name="STATE_972"
+	manpower = 9483
 	state_category = wasteland
 	
 	
@@ -10,13 +9,16 @@ state={
 		owner = ITA
 		buildings = {
 			infrastructure = 1
-			air_base = 2
+			air_base = 1
 		}
 		add_core_of = SWE
+		victory_points = {
+			7985 1
+		}
 	}
 	
 	provinces={
-		4200 10754 7076
+		7985 8069 13073 7136 12082 1057 12866
 	}
 
 	local_supplies=0.0 
