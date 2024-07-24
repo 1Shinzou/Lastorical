@@ -5,11 +5,14 @@
 
  STATE_970: "Inner Papua"
  STATE_971: "Inner Kalimantan"
+ STATE_972: "Maradah"
  STRATEGICREGION_289: "Tobruk"
  STRATEGICREGION_290: "Aswan"
  STRATEGICREGION_291: "Matrouh"
  VICTORY_POINTS_10104: "Al Jaghbub"
  VICTORY_POINTS_10869: "Qara Oasis"
+ VICTORY_POINTS_10785: "Jalu"
+ VICTORY_POINTS_7985: "Maradah"
 
  lastorical_gamerules:0 "Check Gamerules"
  lastorical_gamerules_two:0 "Check Gamerules Continued"
