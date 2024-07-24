@@ -558,30 +558,6 @@ characters={
 		}
 	}
 
-	CAN_gino_verchiella={
-		name=CAN_gino_verchiella
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_2"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = CAN_gino_verchiella
-			ledger = air
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				air_air_superiority_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
 	CAN_john_murchie={
 		name=CAN_john_murchie
 		portraits={

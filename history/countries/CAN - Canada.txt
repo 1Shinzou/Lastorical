@@ -34,12 +34,6 @@ if = {
 		set_air_oob = "CAN_1936_air_legacy"
 	}
 }
-add_ideas = {
-	r56_CAN_great_depression_01
-	r56_CAN_the_big_cut_01
-	r56_CAN_royal_twenty_centers
-	r56_CAN_nonindependent_airforce_01
-}
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine
@@ -70,7 +64,7 @@ recruit_character = CAN_andrew_mcnaughton
 recruit_character = CAN_george_jones
 recruit_character = CAN_raymond_collishaw
 recruit_character = CAN_guy_simonds
-recruit_character = CAN_gino_verchiella
+recruit_character = CAN_james_stanley_scott
 recruit_character = CAN_alasdair_murray
 recruit_character = CAN_george_volkoff
 recruit_character = CAN_george_croil
@@ -85,6 +79,7 @@ recruit_character = CAN_william_kashtan
 recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
+recruit_character = CAN_lindsay_gordon
 
 IF = {
 	limit = {
@@ -165,10 +160,8 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Together for Victory" }
-	r56_CAN_great_depression_01
-	r56_CAN_the_big_cut_01
-	r56_CAN_royal_twenty_centers
-	r56_CAN_nonindependent_airforce_01
+	add_ideas = CAN_great_depression_1
+	add_ideas = CAN_conscription_crisis
 	set_cosmetic_tag = CAN_UK
 
 	add_to_tech_sharing_group = commonwealth_research
@@ -204,7 +197,6 @@ if = {
 			complete_national_focus = production_effort
 		}
 	}
-	
 
 	add_ideas = {
 		#laws
@@ -317,7 +309,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "River Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -350,7 +342,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "River Class"
 		type = ship_hull_light_1
 		name_group = CAN_DD_HISTORICAL
 		parent_version = 0

@@ -206,7 +206,6 @@
  #Ministers
  
  r56_CAN_jack_bickell:0 "Jack Bickell"
- r56_CAN_william_daum_euler:0 "William Daum Euler"
  r56_CAN_thomas_crerar:0 "Thomas Crerar"
  r56_CAN_Arthur_Cardin:0 "Arthur Cardin"
  r56_CAN_adrien_arcand:0 "Adrien Arcand"
@@ -1013,5 +1012,19 @@
 
  CAN_howard_reid:0 "Howard Reid"
  CAN_james_prentice:0 "James Prentice"
+ CAN_frogmen_tech:0 "Combat Frogmen"
 
-  CAN_frogmen_tech:0 "Combat Frogmen"
+
+#ARMOR TREE
+ CAN_motorized_focus:0 "A Motorized Army"
+ CAN_motorized_focus_desc:0 "We need to motorize our army."
+ CAN_tank_focus:0 "Canadian Tank Regiment"
+ CAN_tank_focus_desc:0 "Canadian Tanks need to be the finest in the World."
+ CAN_tank_variant_focus:0 "Intensify Tank Research"
+ CAN_tank_variant_focus_desc:0 "We need to catch up and even surpass other tank nations in terms of technology."
+ CAN_adopt_bliztkrieg_tactics:0 "Study German Armor Doctrine"
+ CAN_adopt_bliztkrieg_tactics_desc:0 "German Blitzkrieg Tactits seemt to be effective, we need to make use of them..."
+ CAN_order_increased_tank_production:0 "Increase Tank Production"
+ CAN_order_increased_tank_production_desc:0 "Our Industry is small which is why we need to streamline our Tank Production to even have the proper ressources available."
+ CAN_britains_finest_armor_corps:0 "Canadas finest Armored Corp"
+ CAN_britains_finest_armor_corps_desc:0 "Canadian Tanks will be the greatest in the World."
