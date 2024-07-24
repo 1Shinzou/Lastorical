@@ -5377,8 +5377,18 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = GER_plunder_the_west
-			focus = GER_form_the_reichskommissariats
+			#focus = GER_form_the_reichskommissariats
+			#focus = GER_reintegrate_luxemburg_and_alsace_lorraine
+		}
+		prerequisite = {
+			#focus = GER_plunder_the_west
+			#focus = GER_form_the_reichskommissariats
 			focus = GER_reintegrate_luxemburg_and_alsace_lorraine
+		}
+		prerequisite = {
+			#focus = GER_plunder_the_west
+			focus = GER_form_the_reichskommissariats
+			#focus = GER_reintegrate_luxemburg_and_alsace_lorraine
 		}
 		
 		relative_position_id = GER_form_the_reichskommissariats
