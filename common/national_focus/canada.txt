@@ -2412,8 +2412,11 @@ focus_tree = {
 
 	focus = {
 		id = CAN_motorized_focus
-		prerequisite = { focus = CAN_a_motorized_army }
-		prerequisite = { focus = CAN_dominion_rifle_association }
+		prerequisite = { 
+			focus = CAN_a_motorized_army
+			focus = CAN_dominion_rifle_association
+		}
+		#prerequisite = { focus = CAN_dominion_rifle_association }
 		available = { 
 		}
 		mutually_exclusive = { focus =  CAN_red_deer_training_camp }
