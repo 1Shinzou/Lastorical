@@ -698,7 +698,7 @@ fin_war_eco = {
 	annex_canada = {
 		# icon = generic_operation
 		allowed = {
-			tag = ENG
+			tag = SAF
 		}
 		fire_only_once = yes
 		cost = 0
@@ -719,7 +719,7 @@ fin_war_eco = {
 		complete_effect = {
 			CAN = {
 				transfer_units_fraction = {
-					target = ENG
+					target = SAF
 					size = 1
 					stockpile_ratio = 1
 					army_ratio = 1
@@ -730,7 +730,7 @@ fin_war_eco = {
 					}
 				}
 			}
-			ENG = {
+			SAF = {
 				annex_country = {
 					target = CAN
 					transfer_troops = yes
@@ -739,7 +739,7 @@ fin_war_eco = {
 			every_state = {
 				limit = {
 					is_core_of = CAN
-					is_controlled_by = ENG
+					is_controlled_by = SAF
 				}
 				add_compliance = 100
 			}
@@ -791,6 +791,57 @@ fin_war_eco = {
 				limit = {
 					is_core_of = SAF
 					is_controlled_by = FRA
+				}
+				add_compliance = 100
+			}
+		}
+	}
+
+	CAN_annex_south_africa = {
+		# icon = generic_operation
+		allowed = {
+			tag = CAN
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			SAF = {
+				is_ai = yes
+			}
+			ENG = {
+                    has_completed_focus = uk_south_africa_focus
+                }
+		}
+		targets = {
+			SAF
+		}
+		complete_effect = {
+			SAF = {
+				transfer_units_fraction = {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			CAN = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SAF
+					is_controlled_by = CAN
 				}
 				add_compliance = 100
 			}
