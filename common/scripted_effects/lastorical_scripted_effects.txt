@@ -752,7 +752,7 @@ generic_bonus_999 = {
 
 initilize_victory_system = {
 	# state = 439 #Dehli
-	# state = 629 #Hawaii
+	# state = 335 #Java
 	# state = 526 #Okinawa
 	# state = 907 #Cairo
 	# state = 450 #Benghasi
@@ -795,7 +795,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 629 #Hawaii
+				controls_state = 335 #Java
 			}
 			add_to_variable = {
 				var = global.axis_score
@@ -943,7 +943,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 629 #Hawaii
+				controls_state = 335 #Java
 			}
 			add_to_variable = {
 				var = global.allies_score

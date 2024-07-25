@@ -191,12 +191,12 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetHawaiiOwner
+	name = GetJavaOwner
 	text = {
 		trigger = {
 			any_country = {
 				is_axis_country = yes
-				controls_state = 629
+				controls_state = 335
 			}
 		}
 		localization_key = vp_axis_owns
@@ -205,7 +205,7 @@ defined_text = {
 		trigger = {
 			any_country = {
 				is_allied_country = yes
-				controls_state = 629
+				controls_state = 335
 			}
 		}
 		localization_key = vp_alies_owns
