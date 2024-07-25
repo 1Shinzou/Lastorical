@@ -880,7 +880,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 			modifier = {
-				factor = 4
+				factor = 1
 				date > 1937.12.12
 				has_army_manpower = {
 					size > 500000

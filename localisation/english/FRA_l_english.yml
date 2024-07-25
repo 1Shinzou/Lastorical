@@ -13,6 +13,13 @@
  FRA_neutrality_parti_social_francais_long:0 "Parti Social Français"
  FRA_neutrality_parti_social_francais:0 "PSF"
 
+ FRA_appeal_to_the_french_nation1:0 "Appeal to the French Nation"
+ FRA_appeal_to_the_french_nation1_desc:0 "Appeal to the French Nation"
+ FRA_continue_the_fight1:0 "Continue the Fight"
+ FRA_continue_the_fight1_desc:0 "Continue the Fight"
+ FRA_the_free_french_navy1:0 "The Free French Navy"
+ FRA_the_free_french_navy1_desc:0 "The Free French Navy"
+
 
  FRA_payment_for_bombers:0 "Payment for Bombers"
 

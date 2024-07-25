@@ -322,7 +322,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_de_gaulle_strategy
+				has_completed_focus = FRA_battle_of_maneuver
 			}
 			
 			traits = {
