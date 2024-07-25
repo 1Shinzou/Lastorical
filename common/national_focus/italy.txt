@@ -1779,12 +1779,6 @@ focus_tree = {
 		cost = 10
 		available = {
 			any_state = {
-				OR = {
-					is_core_of = LBA
-					is_core_of = ERI
-					is_core_of = SOM
-					is_core_of = ETH
-				}
 				state_is_fully_controlled_by_ROOT_or_subject = yes
 			}
 		}
