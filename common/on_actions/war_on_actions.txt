@@ -7,9 +7,9 @@ on_actions = {
 						tag = GRE
 					}
 				}
-		#		GRE = {
-		#			load_oob = "GRE_lastorical_SPAWN"
-		#		}
+				GRE = {
+					load_oob = "GRE_lastorical_SPAWN"
+				}
 			}
 			if = {
 				limit = {
@@ -21,30 +21,21 @@ on_actions = {
 					load_oob = "YUG_lastorical_SPAWN"
 				}
 			}
-			if = {
-				limit = {
-					FROM = {
-						tag = CHI
-					}
-				}
+		#	if = {
+		#		limit = {
+		#			FROM = {
+		#				tag = CHI
+		#			}
+		#		}
 		#		CHI = {
 		#			load_oob = "CHI_lastorical_SPAWN"
 		#		}
-			}
+		#	}
 			if = {
 				limit = {
 					FROM = {
 						tag = POL
 					}
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = lastorical_win_con_stuffs
-							option = on
-						}
-					}
-					initilize_victory_system = yes
 				}
 				every_country = {
 					every_army_leader = {
@@ -60,6 +51,22 @@ on_actions = {
 						id = britain.24
 						days = 1
 					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = SOV
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = lastorical_win_con_stuffs
+							option = on
+						}
+					}
+					initilize_victory_system = yes
 				}
 			}
 			if = {
