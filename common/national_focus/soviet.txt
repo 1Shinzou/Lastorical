@@ -13080,10 +13080,10 @@ ai_will_do = {
 				NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			}
 			is_subject = no
-			OR = { date > 1939.1.1
+			
 			GER = {
-				has_completed_focus = GER_demand_memel
-			} }
+				has_completed_focus = GER_mol_rib_pact
+			} 
 		}
 		
 		search_filters = {}
