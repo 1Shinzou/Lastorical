@@ -1062,7 +1062,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPA_autarky }
 		
 		icon = GFX_goal_generic_construction
-		x = -8
+		x = -10
 		y = 2
 		relative_position_id = SPA_fuse_the_parties
 		cost = 10
@@ -1419,7 +1419,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_fuse_the_parties }
 		
 		icon = GFX_goal_generic_consumer_goods
-		x = -6
+		x = -8
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 10
@@ -1468,7 +1468,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPA_fascist_economic_aid }
 		
 		icon = GFX_goal_generic_oil_refinery
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SPA_national_recovery
 		cost = 10
@@ -1812,7 +1812,7 @@ focus_tree = {
 				character = "SPA_francisco_franco"
 				country_leader = {
 				  ideology=despotism
-				  traits = { caudillo_1 }
+				  traits = { caudillo_1 hardened_officer }
 				  expire="1965.1.1"
 				}
 				promote_leader = yes
@@ -1821,7 +1821,7 @@ focus_tree = {
 				character = "SPA_francisco_franco"
 				country_leader = {
 				  ideology=fascism_ideology
-				  traits = { caudillo_1 }
+				  traits = { caudillo_1 hardened_officer }
 				  expire="1965.1.1"
 				}
 				promote_leader = yes
@@ -2352,6 +2352,7 @@ focus_tree = {
 						ideology = fascism_ideology
 						trait = caudillo_2
 					}
+					
 				}
 				if = {
 					limit = {
