@@ -43,11 +43,11 @@ JAP = {
 	color_ui = rgb { 230 230 230 }
 }
 MAN = {
-	color = rgb { 255 120 71 }
+	color = rgb { 204 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
 CAN = {
-	color = rgb { 233  59  59 }
+	color = rgb { 204 0 102 }
 	color_ui = rgb { 155 62 51 }
 }
 AST = {
@@ -59,7 +59,7 @@ USA = {
 	color_ui = rgb { 87 160 255 }
 }
 SAF = {
-	color = rgb { 195 107 160 }
+	color = rgb { 128 128 128 }
 	color_ui = rgb { 198 169 248 }
 }
 BRA = {
