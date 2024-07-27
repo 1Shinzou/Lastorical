@@ -183,6 +183,12 @@ ROM_the_romanian_communist_party_desc:0 "N/A"
  ROM_malaxa_bucuresti_desc:0 "N/A"
  ROM_expand_the_romanian_academy:0 "Expand the Romanian Academy"
  ROM_expand_the_romanian_academy_desc:0 "N/A"
+ ROM_deal_with_hungary:0 "Deal with Hungary"
+ ROM_deal_with_hungary_desc:0 "Our old enemy has become our new ally maybe we should start trading with them."
+
+ ROM_italy_puppet:0 "Expand Italian Influence"
+ ROM_italy_puppet_desc:0 "Italy has become a new great power in Southern Europe, maybe we should allign ourselves more closely with them"
+ 
 
 ######################
 ###Industrial Ideas###
@@ -232,7 +238,6 @@ ROM_world_revolution:0 "World Revolution"
 Rom_red_army_2:0 "Romanian Red Army"
 ROM_romanian_volunteer_brigades:0 "Red Army"
 Rom_red_army_2_desc:0 "We need to model our army after the red army if we want to survive."
-ROM_license_german_equipment_1:0 "Trade Deal With Hungary"
 ROM_surrender_contested:0 "Sell Contested territories"
 ROM_surrender_contested_desc:0 "If we sell our contested territories we give our enemy no reason to invade."
 ROM_expand_conscription:0 "Force Conscription"
@@ -247,7 +252,6 @@ ROM_more_oil:0 "Fuel The Fire"
 ROM_more_oil_desc:0 "Our army needs a lot of fuel to work properly."
 ROM_democratic_institution:0 "Democratic Institutions"
 ROM_trade_with_ger:0 "Trade Deal With Germany"
-ROM_license_german_equipment_1_desc:0 "Our old enemy has become our new ally maybe we should start trading with them."
 ROM_democratic_institution:0 "Democratic Institution"
 ROM_democratic_institution_desc:0 "We will establish democratic institutions to enable our nations reserch to go faster."
 ROM_allied_investment:0 "Allied Investments"

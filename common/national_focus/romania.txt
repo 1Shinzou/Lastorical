@@ -14,7 +14,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 300 y = 700 }
+	continuous_focus_position = { x = 200 y = 700 }
 
 #	focus = {
 #		id =
@@ -188,7 +188,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_license_german_equipment_1
+		id = ROM_deal_with_hungary
 		icon = GFX_focus_generic_balkan_diplomacy
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 0
@@ -202,27 +202,41 @@ focus_tree = {
 		}
 
 		available = {
-			
-		    is_ai = no
+			has_completed_focus = ROM_surrender_contested
+			84 = { is_owned_by = ROM }
+			82 = { is_owned_by = ROM }
+			83 = { is_owned_by = ROM }
+		}
+		bypass = {
 			OR = {
-				is_in_faction = no
-				is_in_faction_with = HUN
+				664 = {
+					OWNER = {
+						has_war_with = ROOT
+					}
+				}
+				NOT = {
+					ROM = {
+						controls_state = 84
+						controls_state = 82
+						controls_state = 83
+					}
+				}
 			}
 		}
-
 		completion_reward = {
 			HUN = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 5
-				}	
-				
+				transfer_state = 84
+				transfer_state = 82
+				transfer_state = 83
 			}
 			add_offsite_building = {
 				type = industrial_complex
 				level = 5
 			}
-			
+			add_offsite_building = {
+			type = arms_factory
+			level = 5
+			}
 			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -537,7 +551,8 @@ focus_tree = {
 	focus = {
 		id = ROM_invite_foreign_motor_companies
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = ROM_danubian_transport_network }
+		prerequisite = { focus = ROM_danubian_transport_network
+		focus = ROM_agrarian_reform }
 		mutually_exclusive = { focus = ROM_malaxa }
 		x = 1
 		y = 2
@@ -758,7 +773,6 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			date < 1937.01.01
 		}
 
 
@@ -3106,27 +3120,31 @@ focus_tree = {
 	available = {
 		76 = { is_owned_by = ROM }
 		77 = { is_owned_by = ROM }
-	#	80 = { is_owned_by = ROM }
-	#	78 = { is_owned_by = ROM }
-	#	766 = { is_owned_by = ROM }
 	}
+	bypass = {
+			OR = {
+				664 = {
+					OWNER = {
+						has_war_with = ROOT
+					}
+				}
+				NOT = {
+					ROM = {
+						controls_state = 76
+						controls_state = 77
+					}
+				}
+			}
+		}
 	completion_reward = { 
 		add_offsite_building = {
 			type = industrial_complex
-			level = 8
+			level = 4
 		}
 		add_offsite_building = {
 			type = arms_factory
-			level = 6
+			level = 4
 		}
-		#SOV = {
-		#	transfer_state = 78
-		#	transfer_state = 766
-		#	transfer_state = 80
-		#	add_state_core = 78
-		#	add_state_core = 766
-		#	add_state_core = 80
-		#}
 		HUN = {
 			transfer_state = 76
 			add_state_core = 76
@@ -3182,16 +3200,12 @@ focus_tree = {
 	x = -1
 	y = 2
 	completion_reward = {
-	46 = {add_extra_state_shared_building_slots = 4}
-	81 = {add_extra_state_shared_building_slots = 4}
-	82 = {add_extra_state_shared_building_slots = 4}
-	84 = {add_extra_state_shared_building_slots = 4}
-	83 = {add_extra_state_shared_building_slots = 4}
-	955 = {add_extra_state_shared_building_slots = 4}
-	79 = {add_extra_state_shared_building_slots = 4}
+	46 = {add_extra_state_shared_building_slots = 8}
+	81 = {add_extra_state_shared_building_slots = 8}
+	79 = {add_extra_state_shared_building_slots = 8}
 	
 	random_owned_controlled_state = {
-		prioritize = { 49 }
+		prioritize = { 46 }
 		limit = {
 			free_building_slots = {
 				building = infrastructure
@@ -3200,7 +3214,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 2
 			instant_build = yes
 		}
 	}
@@ -3218,93 +3232,21 @@ focus_tree = {
 			instant_build = yes
 		}
 	}
-	random_owned_controlled_state = {
-		prioritize = { 955 }
-		limit = {
-			free_building_slots = {
+		random_owned_controlled_state = {
+			prioritize = { 81 }
+			limit = {
+				free_building_slots = {
 				building = infrastructure
 				size > 0
+				}
 			}
-		}
-		add_building_construction = {
+			add_building_construction = {
 			type = infrastructure
 			level = 2
 			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 84 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
 			}
 		}
-		add_building_construction = {
-			type = infrastructure
-			level = 3
-			instant_build = yes
-		}
 	}
-	random_owned_controlled_state = {
-		prioritize = { 83 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 82 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 46 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 81 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	
-	}
-
  }
 
  focus = {
@@ -3356,9 +3298,10 @@ focus_tree = {
 		focus = ROM_german_romanian_oil_exploitation_company
 		focus = ROM_join_axis
 	}
-	x = 11
+	mutually_exclusive = { focus = ROM_italy_puppet }
+	x = 10
 	y = 5
-	cost = 15
+	cost = 5
 	completion_reward = {
 		add_offsite_building = {
 			type = industrial_complex
@@ -3374,8 +3317,32 @@ focus_tree = {
 	}
 
  }
-
-#}
+ focus = {
+	id = ROM_italy_puppet
+	icon = GFX_focus_ITA_italian_hegemony
+	prerequisite = {
+		focus = ROM_german_romanian_oil_exploitation_company
+		focus = ROM_join_axis
+	}
+	mutually_exclusive = { focus = ROM_reich_protectorat }
+	x = 0
+	y = 1
+	relative_position_id = ROM_join_axis
+	cost = 5
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 6
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 8
+		}
+		ITA = {
+			puppet = ROM
+		}
+	}
+ }
 }
 
 

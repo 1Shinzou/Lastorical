@@ -8557,9 +8557,62 @@ focus_tree = {
 	}
 
 	focus = {
+	id = BUL_reich_protectorat
+	icon = GFX_focus_ger_reichskommisariats
+	prerequisite = {
+		focus = BUL_approach_germany
+	}
+	mutually_exclusive = { focus = BUL_italy_puppet }
+	x = 0
+	y = 3
+	relative_position_id = BUL_approach_germany
+	cost = 5
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 6
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 8
+		}
+		GER = {
+			puppet = BUL
+		}
+	}
+
+ }
+ focus = {
+	id = BUL_italy_puppet
+	icon = GFX_focus_ITA_italian_hegemony
+	prerequisite = {
+		focus = BUL_cooperation_with_italy
+	}
+	mutually_exclusive = { focus = BUL_reich_protectorat }
+	x = 1
+	y = 2
+	relative_position_id = BUL_cooperation_with_italy
+	cost = 5
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 6
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 8
+		}
+		ITA = {
+			puppet = BUL
+		}
+	}
+ }
+
+	focus = {
 		id = BUL_join_the_tripartite_pact
 
-		prerequisite = { focus = BUL_approach_germany }
+		prerequisite = { focus = BUL_reich_protectorat
+		focus = BUL_italy_puppet }
 
 		dynamic = yes
 
