@@ -180,6 +180,9 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_completed_focus = GER_build_panzer_army
+			}
 			traits = {
 				army_armored_3
 			}
@@ -215,6 +218,9 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_mobile_warfare 
 			}
 			traits = {
 				army_CombinedArms_3
@@ -457,6 +463,24 @@ characters={
 			army={
 				large=GFX_portrait_GER_erwin_von_witzleben
 				small=GFX_portrait_GER_erwin_von_witzleben_small
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = erwin_von_witzleben
+			ledger = army
+			available = {
+				has_completed_focus = GER_elite_units
+			}
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0.200
 			}
 		}
 		corps_commander={
@@ -1145,7 +1169,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_army_innovation
+				has_completed_focus = GER_develop_the_heer_r56
 			}
 			traits = {
 				army_chief_maneuver_2
@@ -1301,7 +1325,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_modernize_cas
+				has_completed_focus = GER_modernize_CAS
 			}
 			traits = {
 				air_close_air_support_2
@@ -1433,8 +1457,12 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_war_with = SOV
+			}
 			traits = {
 				armaments_organizer 
+				economist 
 			}
 		}		
 	}
@@ -1793,57 +1821,6 @@ characters={
 		}
 	}
 	
-	GER_carl_friedrich_goerdeler={
-		name=GER_carl_friedrich_goerdeler
-		portraits={
-			army={
-				small="GFX_idea_GER_carl_friedrich_goerdeler"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = GER_carl_friedrich_goerdeler
-			allowed = {
-				original_tag = GER
-				has_dlc = "Waking the Tiger"
-			}
-			available = {
-				has_completed_focus = GER_revive_the_kaiserreich 
-			}
-			traits = {
-				economist 
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}		
-	}
-	
-	GER_julius_leber={
-		name=GER_julius_leber
-		portraits={
-			army={
-				small="GFX_idea_GER_julius_leber"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = GER_julius_leber
-			allowed = {
-				original_tag = GER
-				has_dlc = "Waking the Tiger"
-			}
-			available = {
-				has_completed_focus = GER_reestablish_free_elections 
-			}
-			traits = {
-				connected_citizen 
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
-	}
 	
 	GER_theodor_heuss={
 		name=GER_theodor_heuss
