@@ -17,6 +17,17 @@ CAN_vickers_armstrong_can_organization = {
 	}
 }
 
+CAN_heavy_organization = {
+    name = CAN_infantry_tank_organization
+    include = generic_infantry_tank_organization
+    icon = usa_tank_destroyer_board
+    allowed = {
+        original_TAG = CAN
+        has_dlc = "Together for Victory"
+    }
+}
+
+
 
 #####################
 
