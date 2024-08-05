@@ -944,9 +944,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-mutually_exclusive = {
-	focus = ENG_order_increased_tank_production
-}
+		mutually_exclusive = {
+			focus = ENG_order_increased_tank_production
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
