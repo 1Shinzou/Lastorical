@@ -401,7 +401,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ROM_civil_works
-				bonus = 2.0
+				bonus = 1.0
 				uses = 3
 				category = industry
 			}
