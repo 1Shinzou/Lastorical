@@ -71,7 +71,7 @@ leader_traits = {
 	random = no
 	sprite = 12
 
-	army_armor_attack_factor = 0.025
+	army_armor_attack_factor = 0.10
 	army_speed_factor = 0.05
 
 	ai_will_do = {
@@ -5167,7 +5167,7 @@ sick = {
 	}
 
 	stalin_they_will_know_fear = {
-		army_armor_attack_factor = 0.1
+		army_armor_attack_factor = 0.05
 		}
 
 	stalin_inheritor_of_lenin_genius = {

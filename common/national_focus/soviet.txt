@@ -12245,6 +12245,7 @@ ai_will_do = {
 		}
 		
 		available = {
+			has_completed_focus = SOV_father_of_nations
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			any_country = {
 				OR = {
