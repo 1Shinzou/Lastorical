@@ -750,7 +750,7 @@ focus_tree = {
         }
         completion_reward = {
             every_army_leader = {
-                add_planning = 1
+                add_logistics = 1
             }
             add_ideas = SAF_t_service_corps
                     #bonus maintenance, engineers?
@@ -758,7 +758,6 @@ focus_tree = {
                 name = motorized_bonus
                 bonus = 3
                 uses = 1
-                category = maintenance_company_tech
                 category = engineers_tech
             }
         }

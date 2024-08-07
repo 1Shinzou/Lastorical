@@ -517,7 +517,7 @@ ideas = {
 			picture = ast_all_in
 
 			modifier = {
-				army_leader_start_planning_level = 1
+				army_leader_start_logistics_level = 1
 			}
 		}
 		SAF_SAR_and_H_brigade = {
