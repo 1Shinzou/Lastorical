@@ -1701,7 +1701,6 @@
 					ideology = socialism
 					traits = {
 						reluctant_interventionist
-						champion_of_equality
 						stout_defender
 					}
 				}
@@ -1887,6 +1886,11 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			add_trait = {
+						character = FRA_leon_blum
+						ideology = socialism
+						trait = champion_of_equality
+					}
 			add_state_core = 459
 			add_state_core = 460
 			add_state_core = 513
