@@ -106,6 +106,8 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	basic_train = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
 }
 set_convoys = 350		# 4th biggest merchant marine in the world
 if = {
