@@ -32,6 +32,8 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	basic_train = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
