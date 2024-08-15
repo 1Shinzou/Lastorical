@@ -265,8 +265,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
 2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
-13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltarimage.png
+13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
 13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
+1644;1310;sea;5563;-1;-1;-1;-1;;GDU Papua
+5563;5364;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres
+5563;5613;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres 2
+
 -1;-1;;-1;-1;-1;-1;-1;-1 
