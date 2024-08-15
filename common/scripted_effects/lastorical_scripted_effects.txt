@@ -752,13 +752,13 @@ generic_bonus_999 = {
 
 initilize_victory_system = {
 	# state = 439 #Dehli
-	# state = 335 #Java
-	# state = 526 #Okinawa
+	# state = 335 #Batavia
+	# state = 524 #Taiwan
 	# state = 907 #Cairo
 	# state = 450 #Benghasi
 	# state = 115 #Palermo
 	# state = 16 #Paris
-	# state = 7 #Amsterdam
+	# state = 202 #Kiev
 	# state = 219 #Moscow
 	# state = 217 #Stalingrad
 
@@ -795,7 +795,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 335 #Java
+				controls_state = 335 #Batavia
 			}
 			add_to_variable = {
 				var = global.axis_score
@@ -809,7 +809,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 526 #Okinawa
+				controls_state = 524 #Taiwan
 			}
 			add_to_variable = {
 				var = global.axis_score
@@ -880,7 +880,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 7 #Amsterdam
+				controls_state = 202 #Kiev
 			}
 			add_to_variable = {
 				var = global.axis_score
@@ -943,7 +943,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 335 #Java
+				controls_state = 335 #Batavia
 			}
 			add_to_variable = {
 				var = global.allies_score
@@ -957,7 +957,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 526 #Okinawa
+				controls_state = 524 #Taiwan
 			}
 			add_to_variable = {
 				var = global.allies_score
@@ -1027,7 +1027,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 7 #Amsterdam
+				controls_state = 202 #Kiev
 			}
 			add_to_variable = {
 				var = global.allies_score

@@ -191,7 +191,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetJavaOwner
+	name = GetBataviaOwner
 	text = {
 		trigger = {
 			any_country = {
@@ -212,12 +212,12 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetOkinawaOwner
+	name = GetTaiwanOwner
 	text = {
 		trigger = {
 			any_country = {
 				is_axis_country = yes
-				controls_state = 526 
+				controls_state = 524
 			}
 		}
 		localization_key = vp_axis_owns
@@ -226,7 +226,7 @@ defined_text = {
 		trigger = {
 			any_country = {
 				is_allied_country = yes
-				controls_state = 526 
+				controls_state = 524
 			}
 		}
 		localization_key = vp_alies_owns
@@ -320,12 +320,12 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetAmsterdamOwner
+	name = GetKievOwner
 	text = {
 		trigger = {
 			any_country = {
 				is_axis_country = yes
-				controls_state = 7
+				controls_state = 202
 			}
 		}
 		localization_key = vp_axis_owns
@@ -334,7 +334,7 @@ defined_text = {
 		trigger = {
 			any_country = {
 				is_allied_country = yes
-				controls_state = 7
+				controls_state = 202
 			}
 		}
 		localization_key = vp_alies_owns
