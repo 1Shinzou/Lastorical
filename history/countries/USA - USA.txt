@@ -40,7 +40,7 @@ if = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 5 #Maybe I overbuffed Axis? Just giving the US another research slot to counterbalance
 set_stability = 0.80
 set_war_support = 0.0 #Shinzou was here
 add_command_power = 20

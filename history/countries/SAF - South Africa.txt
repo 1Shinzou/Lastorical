@@ -48,7 +48,7 @@ recruit_character = SAF_e_g_jansen
 894 = { #Kunene - Graveyard coast
 	add_dynamic_modifier = { modifier = NMB_graveyard_coast }
 }
-
+set_research_slots = 3
 # Starting tech
 set_technology = {
 
