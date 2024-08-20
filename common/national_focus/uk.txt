@@ -218,18 +218,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
 			136 = {
 				if = {
@@ -242,10 +230,10 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = industrial_complex
-						level = 1
+						type = arms_factory
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -3334,7 +3322,7 @@ focus_tree = {
 		available = {
 
 		}		
-		prerequisite = { focus = ENG_maintaining_the_balance_of_power focus = ENG_maintaining_imperial_integrity }
+		prerequisite = { focus = ENG_maintaining_imperial_integrity }
 
 		icon = GFX_goal_generic_construction
 
@@ -3961,7 +3949,7 @@ focus_tree = {
 		}
 		
          available = {
-			has_war_support > 0.35
+			has_war_support > 0.24
         }
 
 		available_if_capitulated = yes
@@ -4105,7 +4093,7 @@ focus_tree = {
 		icon = GFX_focus_usa_focus_on_europe
 		cost = 10
 		prerequisite = {
-			focus = ENG_maintaining_the_balance_of_power
+			#focus = ENG_maintaining_the_balance_of_power
 			focus = ENG_maintaining_imperial_integrity
 		}
 		x = 1
