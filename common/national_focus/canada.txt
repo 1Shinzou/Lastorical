@@ -2781,6 +2781,40 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAN_the_plan
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = CAN_shadow_factories }
+		x = -2
+		y = 1
+		relative_position_id = CAN_shadow_factories
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 2
+				has_completed_focus = CAN_supply_the_empire
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = CAN_the_plan
+		}
+	}
+	focus = {
 		id = CAN_montreal_laboratory_collaboration
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = CAN_strengthen_the_commonwealth_ties }
@@ -2876,7 +2910,7 @@ focus_tree = {
 	focus = {
 		id = CAN_supply_the_empire
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_the_plan}
+		#prerequisite = { focus = CAN_the_plan}
 		prerequisite = { focus = CAN_camp_x }
 		x = 0
 		y = 3
@@ -3019,7 +3053,7 @@ focus_tree = {
 		icon = GFX_focus_CAN_rifle_association
 		x = -2
 		y = 2
-		prerequisite = {  focus = CAN_shadow_factories  }
+		prerequisite = {  focus = CAN_the_plan }
 		relative_position_id =  CAN_shadow_factories
 
 		cost = 10
