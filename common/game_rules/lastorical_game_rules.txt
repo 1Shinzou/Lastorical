@@ -308,7 +308,7 @@ lastorical_national_ideas = {
 lastorical_adaptable = {
 	name = "Adaptable yes or no"
 	group = "lastorical Rules"
-	icon = "GFX_decision_generic_tank"
+	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
 		name = on
 		text = "GOff"
@@ -318,5 +318,20 @@ lastorical_adaptable = {
 		name = off
 		text = "ROn"
 		desc = "Adaptable will NOT be pickable"
+	}
+}
+lastorical_traits = {
+	name = "Remove terrain traits"
+	group = "lastorical Rules"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = on
+		text = "GOff"
+		desc = "Terrain traits are normal"
+	}
+	option = {
+		name = off
+		text = "ROn"
+		desc = "Terrain traits are gone ZEZE"
 	}
 }

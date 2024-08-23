@@ -822,6 +822,7 @@ MENU_DISCORD_Lastorical:0 "Lastorical Discord"
   finances_civilian:0 "Civilian Spendings"
   finances_foreign:0 "Foreign Subsidies"
   lastorical_adaptable_tooltip:0 "This trait is only pickable when the 'lastorical_adaptable' game rule option is set to 'on'."
+  lastorical_traits_tooltip:0 "These traits can be removed if the traits game rule is set up properly"
 
   #STRAITS
 

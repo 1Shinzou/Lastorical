@@ -1276,7 +1276,22 @@ leader_traits = {
 		modifier = {
 			winter_attrition_factor = -0.5
 		}
-		
+		custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1455,6 +1470,22 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
+		custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}
 		new_commander_weight = {
 			factor = 100
 			#modifier = {
@@ -1483,7 +1514,22 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		
+		custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1504,7 +1550,22 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		
+		custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1525,7 +1586,22 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		
+		custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1547,7 +1623,22 @@ leader_traits = {
 			}
 		}
 		
-		ai_will_do = {
+		ai_custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}will_do = {
 			factor = 1
 		}
 		trait_type = basic_terrain_trait
@@ -1567,7 +1658,22 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		
+		custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1588,7 +1694,22 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		
+		custom_tooltip = "lastorical_traits_tooltip"
+		custom_prerequisite_tooltip = "lastorical_traits_tooltip"
+			allowed = {
+				OR = {
+					has_game_rule = {
+						rule = lastorical_traits
+						option = on
+					}
+					NOT = {
+						has_game_rule = {
+							rule = lastorical_traits
+							option = off
+						}
+					}
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}

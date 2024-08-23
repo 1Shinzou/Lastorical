@@ -461,6 +461,23 @@ on_actions = {
             remove_trait = adaptable
         }
     }
+	on_game_rule_change = {
+        if = {
+            limit = {
+                has_game_rule = lastorical_traits
+                game_rule = on
+            }
+            # shinzou cope
+            remove_trait = desert_fox
+			remove_trait = swamp_fox
+			remove_trait = trait_mountaineer
+			remove_trait = hill_fighter
+			remove_trait = jungle_rat
+			remove_trait = ranger
+			remove_trait = urban_assault_specialist
+			remove_trait = winter_specialist
+        }
+    }
 	on_startup = {
 		effect = {
 			if = {
