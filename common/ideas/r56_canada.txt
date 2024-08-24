@@ -1219,7 +1219,7 @@ ideas = {
 		r56_CAN_restructured_government_02 = {
 
 			name = r56_CAN_restructured_government
-		
+			picture = generic_improved_industries
 			allowed = {
 				always = no
 			}
