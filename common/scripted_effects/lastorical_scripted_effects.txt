@@ -453,8 +453,6 @@ lastorical_capitulations_on_actions = {
 			}
 			transfer_state = 731
 			transfer_state = 184
-		}
-		ITA = {
 			transfer_state = 185
 			transfer_state = 47
 			transfer_state = 186
@@ -622,15 +620,6 @@ lastorical_capitulations_on_actions_collab = {
 			}
 			transfer_state = 731
 			transfer_state = 184
-		}
-			every_state = {
-                limit = {
-                    is_core_of = GRE
-                    is_controlled_by = BUL
-                }
-                add_compliance = 100
-		    }
-		ITA = {
 			transfer_state = 185
 			transfer_state = 47
 			transfer_state = 186
@@ -640,7 +629,7 @@ lastorical_capitulations_on_actions_collab = {
 			every_state = {
                 limit = {
                     is_core_of = GRE
-                    is_controlled_by = ITA
+                    is_controlled_by = BUL
                 }
                 add_compliance = 100
 		    }
