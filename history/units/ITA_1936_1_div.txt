@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "1-Div-Training-disabled"
+	name = "1-Div-Training"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -62,8 +62,8 @@ division_template = {
 
 units = {
 	division= {	
-		name = "1-Div-Training-disabled"
-		location = 13250
+		name = "1 DIV Training"
+		location = 9904
 		division_template = "1-Div-Training"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
