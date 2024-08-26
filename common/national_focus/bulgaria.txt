@@ -8235,7 +8235,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_cooperation_with_italy }
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		relative_position_id = BUL_industrial_autarky
-		x = 0
+		x = 2
 		y = 5
 		cost = 10
 
@@ -8460,7 +8460,7 @@ focus_tree = {
 
 		icon = GFX_focus_befriend_italy
 		relative_position_id = BUL_approach_germany
-		x = 1
+		x = 3
 		y = 1
 		cost = 10
 
@@ -8563,7 +8563,7 @@ focus_tree = {
 		focus = BUL_approach_germany
 	}
 	mutually_exclusive = { focus = BUL_italy_puppet }
-	x = 0
+	x = 1
 	y = 3
 	relative_position_id = BUL_approach_germany
 	cost = 5
@@ -8589,7 +8589,7 @@ focus_tree = {
 		focus = BUL_cooperation_with_italy
 	}
 	mutually_exclusive = { focus = BUL_reich_protectorat }
-	x = 1
+	x = 0
 	y = 2
 	relative_position_id = BUL_cooperation_with_italy
 	cost = 5
@@ -8611,8 +8611,7 @@ focus_tree = {
 	focus = {
 		id = BUL_join_the_tripartite_pact
 
-		prerequisite = { focus = BUL_reich_protectorat
-		focus = BUL_italy_puppet }
+		prerequisite = { focus = BUL_approach_germany }
 
 		dynamic = yes
 
