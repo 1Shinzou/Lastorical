@@ -29,7 +29,7 @@ state = {
 			1984 2
 		}
 		
-		owner = ITA
+		owner = ETH
 1936.1.1.13 = { owner = ETH }
 		add_core_of = ETH
 		add_core_of = ETH

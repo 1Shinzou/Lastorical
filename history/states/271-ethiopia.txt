@@ -21,7 +21,7 @@ state=
 		#add_dynamic_modifier = {
 		#	modifier = ETH_state_decentralization_dynamic_modifier
 		#}
-		owner = ITA
+		owner = ETH
 1936.1.1.13 = { owner = ETH }
 		buildings = {
 			infrastructure = 2

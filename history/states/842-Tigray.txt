@@ -33,8 +33,8 @@ state={
 		victory_points = {
 			13238 1 
 		}
-		owner = ITA
-1936.1.1.13 = { owner = ETH }
+		owner = ETH
+		1936.1.1.13 = { owner = ETH }
 		add_core_of = ETH
 		add_core_of = ETH
 		add_claim_by = ERI
