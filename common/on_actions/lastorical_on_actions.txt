@@ -607,16 +607,16 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					ETH = {
+					PRC = {
 						exists = no
 					}
 				}
-				every_state = {
-					limit = {
-						is_core_of = ETH
-					}
-					set_compliance = 15
-				}
+			#	every_state = {
+			#		limit = {
+			#			is_core_of = ETH
+			#		}
+			#		set_compliance = 15
+			#	}
 				every_country = { # HERE
 					limit = {
 						AND = {
@@ -640,8 +640,8 @@ on_actions = {
 			BUL = {
 				add_corps_commander_role = {
 					character = BUL_georgi_markov
-					traits = { trait_BUL_zveno_member infantry_leader trickster }
-					skill = 5
+					traits = { old_guard trait_BUL_zveno_member infantry_leader trickster }
+					skill = 6
 					attack_skill = 4
 					defense_skill = 4
 					planning_skill = 5
@@ -649,12 +649,31 @@ on_actions = {
 				}
 				add_corps_commander_role = {
 					character = BUL_damian_velchev
-					traits = { commando trait_reckless harsh_leader trait_BUL_zveno_member organizer infantry_leader  }
-					skill = 5
-					attack_skill = 4
+					skill=6
+					traits = { trait_engineer trickster commando trait_BUL_zveno_member trait_reckless harsh_leader organizer infantry_leader brilliant_strategist skilled_staffer expert_delegator }
+					attack_skill= 5
+					defense_skill= 4
+					planning_skill= 6
+					logistics_skill= 7
+				}
+
+				add_corps_commander_role = {
+					character = BUL_angel_dotsev
+					traits = { brilliant_strategist urban_assault_specialist trait_BUL_zveno_member organizer cavalry_leader panzer_leader trait_engineer trickster }
+					skill = 6
+					attack_skill = 5
 					defense_skill = 5
-					planning_skill = 3
+					planning_skill = 5
 					logistics_skill = 6
+				}
+				add_corps_commander_role = {
+					character = BUL_ivan_markov
+					skill=6
+					traits = { trait_BUL_zveno_member cavalry_leader panzer_leader urban_assault_specialist trickster trait_engineer trickster }
+					attack_skill= 5
+					defense_skill= 4
+					planning_skill= 6
+					logistics_skill= 7
 				}
 			}
 
@@ -951,199 +970,15 @@ on_actions = {
 						load_oob = "ITA_1936_nsb_1_div"
 					}
 						
-					}
-				
-			} else_if = {
+					}	
+			} 
+			else_if = {
 				limit = {
-					ETH = {
+					PRC = {
 						exists = yes
 					}
 				}
 				set_global_flag = no_pregrind
-#####################################################################################################################################################
-#####################################################################################################################################################
-################################################################## NO PREGRINDS #####################################################################
-#####################################################################################################################################################
-#####################################################################################################################################################
-
-GER = {
-	add_corps_commander_role = {
-		character = GER_fedor_von_bock
-			traits={ brilliant_strategist trait_reckless }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
-	}
-	add_corps_commander_role = {
-		character = GER_kurt_student
-		traits={ trait_reckless commando }
-		skill=4
-		attack_skill=4
-		defense_skill=2
-		planning_skill=10
-		logistics_skill=3
-	}
-}
-
-BUL = {
-	add_corps_commander_role = {
-		character = BUL_georgi_markov
-		traits = { old_guard infantry_leader }
-		skill = 3
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	add_corps_commander_role = {
-		character = BUL_damian_velchev
-		traits = { trait_reckless harsh_leader trait_BUL_zveno_member }
-		skill = 2
-		attack_skill = 3
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 2
-	}
-}
-
-HUN = {
-	add_corps_commander_role = {
-		character = HUN_geza_lakatos
-		skill=3
-		attack_skill=3
-		defense_skill=2
-		planning_skill=3
-		logistics_skill=2
-	}
-	add_corps_commander_role = {
-		character = HUN_ferenc_feketehalmyczeydner
-		skill=2
-		attack_skill=2
-		defense_skill=1
-		planning_skill=2
-		logistics_skill=2
-	}
-}
-
-ITA = {
-	add_corps_commander_role = {
-		character = ITA_sebastiano_visconti_prasca
-		traits = { inflexible_strategist career_officer }
-		skill = 1
-		attack_skill = 1
-		defense_skill = 1
-		planning_skill = 1
-		logistics_skill = 1
-	}
-}
-
-JAP = {
-	add_corps_commander_role = {
-		character = JAP_tomoyuki_yamashita
-		traits={ brilliant_strategist politically_connected trickster trait_engineer }
-		skill=5
-		attack_skill=4
-		defense_skill=5
-		planning_skill=3
-		logistics_skill=4
-	}
-	add_corps_commander_role = {
-		character = JAP_shizuichi_tanaka
-		traits={ career_officer infantry_officer trickster }
-		skill=4
-		attack_skill=4
-		defense_skill=3
-		planning_skill=2
-		logistics_skill=4
-	}
-	add_corps_commander_role = {
-		character = JAP_toshizo_nishio
-		traits={ brilliant_strategist infantry_officer }
-		skill=3
-		attack_skill=3
-		defense_skill=2
-		planning_skill=3
-		logistics_skill=2
-	}
-	add_corps_commander_role = {
-		character = JAP_seishiro_itagaki
-		traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
-		skill=3
-		attack_skill=3
-		defense_skill=3
-		planning_skill=2
-		logistics_skill=2
-	}
-	add_corps_commander_role = {
-		character = JAP_keisuke_fujie
-		traits={ career_officer politically_connected fortress_buster }
-		skill=3
-		attack_skill=1
-		defense_skill=3
-		planning_skill=3
-		logistics_skill=3
-	}
-	add_corps_commander_role = {
-		character = JAP_hitoshi_imamura
-		traits={ career_officer infantry_officer commando }
-		skill=3
-		attack_skill=3
-		defense_skill=1
-		planning_skill=3
-		logistics_skill=3
-	}
-}
-
-
-SOV = {
-	add_corps_commander_role = {
-		character = SOV_konstantin_rokossovsky
-		traits = { brilliant_strategist trait_cautious armor_officer }
-		skill = 4
-		attack_skill = 3
-		defense_skill = 4
-		planning_skill = 2
-		logistics_skill = 4
-	}
-
-	add_corps_commander_role = {
-		character = SOV_leonid_govorov
-		skill = 3
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 2
-	}
-}
-
-SPR = {
-	add_corps_commander_role = {
-		character = SPR_mohamed_meziane
-		traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies }
-		skill=4
-		attack_skill=5
-		defense_skill=2
-		planning_skill=3
-		logistics_skill=3
-	}
-	add_corps_commander_role = {
-		character = SPA_juan_yague
-		traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
-		skill=3
-		attack_skill=4
-		defense_skill=2
-		planning_skill=2
-		logistics_skill=2
-	}
-}
-
-#####################################################################################################################################################
-#####################################################################################################################################################
-################################################################## NO PREGRINDS #####################################################################
-#####################################################################################################################################################
-#####################################################################################################################################################
 				ITA = {
 					if = {
 					limit = {
