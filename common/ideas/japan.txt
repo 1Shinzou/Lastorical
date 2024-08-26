@@ -39,6 +39,24 @@ ideas = {
 				compliance_gain = 0.05
 			}
 		}
+
+		JAP_theater_prep = { #Flavor idea, really don't need these stats after doing the prep focues
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			available = {
+				original_tag = JAP
+			}
+			removal_cost = -1
+			picture = generic_war_preparation
+			modifier = {
+				planning_speed = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.1
+			}
+		}
 	
 		# POLITICAL
 		student_mobilization_idea = {

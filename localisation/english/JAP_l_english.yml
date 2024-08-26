@@ -294,6 +294,7 @@ JAP_emperors_untiversity:0 "University Expanded"
  JAP_r56_nanshin_ron_desc:0 ""
  jap_r56_hokushin_ron:0 "Hokushin Ron"
  jap_r56_hokushin_ron_desc:0 "We shall fight against the greater evil till the end of times!"
+ JAP_theater_prep:0 "Theater Preparation"
 
   ###################### EVENTS FROM KMT (SUNFALL - JAPANESE CIVIL WAR AND STUFF) ######################
  jap.1.t:0 "Kodoha Launched Military Coup!"
