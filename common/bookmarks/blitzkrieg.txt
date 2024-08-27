@@ -1,6 +1,6 @@
 bookmarks = {
 	bookmark = {
-		name = "No-Pregrind Start"
+		name = "(SOON) No-Asia"
 		desc = "This start allows players to grind to get traits. This mode allows Italy to fight Ethiopia, Players to send volenteers to Spain, And the winter war to occur."
 		date = 1936.1.1.13
 		picture = "GFX_select_date_1939"
