@@ -731,6 +731,30 @@ on_actions = {
 				}
 	}
 
+	RAJ = {
+		add_corps_commander_role = {
+			character = RAJ_frank_messervy
+			traits={ organizer infantry_leader hill_fighter }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
+	AST = {
+		add_corps_commander_role = {
+			character = AST_leslie_morshead
+			traits={ organizer infantry_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=2
+		}
+	}
+
 	HUN = {
 		add_corps_commander_role = {
 			character = HUN_geza_lakatos
@@ -762,7 +786,40 @@ on_actions = {
 			planning_skill=5
 			logistics_skill=4
 		}
+		add_corps_commander_role = {
+			character = ITA_ugo_cavallero
+			traits = { old_guard career_officer trait_cautious organisational_leader infantry_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=4
+		}
 	}
+
+	ROM = {
+		add_field_marshal_role = {
+			character = ROM_ion_antonescu
+			traits = { infantry_leader trickster offensive_doctrine skilled_staffer }
+			skill=5
+			attack_skill=5
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=4
+		}
+
+		add_field_marshal_role = {
+			character = ROM_petre_dumitrescu
+			traits = { logistics_wizard offensive_doctrine organizer infantry_leader }
+			skill=6
+			attack_skill=5
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=3
+		}
+	}
+
+
 
 	JAP = {
 		add_corps_commander_role = {

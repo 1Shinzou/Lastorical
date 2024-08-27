@@ -622,8 +622,6 @@ ideas = {
 			
 			}
 		GER_naval_power = {
-			
-			
 			allowed = {
 				original_tag = GER
 			}
