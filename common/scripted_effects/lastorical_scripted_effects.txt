@@ -405,15 +405,15 @@ lastorical_capitulations_on_actions = {
 			add_state_core = 106
 			transfer_state = 803
 			add_state_core = 803
-			if = {
-				limit = { NOT = { has_idea = peace_training } }
-				add_ideas = peace_training
-			}
+			#if = {
+			#	limit = { NOT = { has_idea = peace_training } }
+			#	add_ideas = peace_training
+			#}
 		}
 		HUN = {
 			transfer_state = 764
 			transfer_state = 45
-			add_ideas = peace_training
+			#add_ideas = peace_training
 		}
 	} 
 	# Albania
@@ -446,6 +446,9 @@ lastorical_capitulations_on_actions = {
 		GRE = {
 			transfer_navy = { target = ITA }
 		}
+		ITA = {
+			transfer_state = 182
+		}
 		BUL = {
 			add_named_threat = { 
 				threat = 3.7 
@@ -457,7 +460,7 @@ lastorical_capitulations_on_actions = {
 			transfer_state = 47
 			transfer_state = 186
 			transfer_state = 187
-			transfer_state = 182
+			
 		}
 	} 
 	# China
@@ -638,6 +641,9 @@ lastorical_capitulations_on_actions_collab = {
 			transfer_state = 47
 			transfer_state = 186
 			transfer_state = 187
+			transfer_state = 182
+		}
+		ITA = {
 			transfer_state = 182
 		}
 			every_state = {
