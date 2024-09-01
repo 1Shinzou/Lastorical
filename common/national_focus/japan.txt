@@ -1190,6 +1190,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			army_experience = 300
 			if = {
 				limit = {
 					CHI = { #if CHI owns one of these states, they get the event
