@@ -1,12 +1,10 @@
-NDefines.NFocus.FOCUS_POINT_DAYS = 5 -- 1.5x focuses
-
---Convoy Prio
 
 
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 7
 
+--Convoy Prio
 NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1								-- Default convoy priority for naval invasions
 NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1								-- Default convoy priority for naval transports
 NDefines.NNavy.SUPPLY_PRIORITY = 2								    	-- Default convoy priority for supplying units via sea
@@ -27,7 +25,7 @@ NDefines.NDiplomacy.TENSION_FACTION_JOIN = 0
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 5				        -- Number of factories used to create an intelligence agency
 
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999                            -- WAS 500 || XP Cap
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999			                    -- WAS 500 || XP Cap
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999			                 -- WAS 500 || XP Cap
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999		                    -- WAS 500 || XP Cap
 
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- Free license
@@ -118,57 +116,6 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0 -- Attack bonus
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_ON_CORE = 0 -- Attack bonus factor when fighting on cores.
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_ON_CORE = 0 -- Defense bonus factor when fighting on cores.
-
--- Supply Abbus: It punish less compare to vanilla
-NDefines.NSupply.INFRA_TO_SUPPLY = 0.5  -- 0.3
-NDefines.NSupply.VP_TO_SUPPLY_BASE = 0.1 --0.2
-NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.06 --0.05
-
-NDefines.NSupply.CAPITAL_SUPPLY_BASE = 5.0 -- 5.0
-NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.5 -- 0.3
-NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.7 -- 0.6
-NDefines.NSupply.CAPITAL_SUPPLY_DOCKYARDS = 0.6 -- 0.4
-
-NDefines.NSupply.CAPITAL_INITIAL_SUPPLY_FLOW = 8.0 -- 5.0
-NDefines.NSupply.CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.5 -- 0.5
-NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2 -- 1.2
-NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.6 -- 2.8
-NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.50 -- 0.50
-NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 1.0 -- 0.70
-NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 4.0 -- 3.5
-NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.8 -- 0.8
-NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1.5 --1.0
-
-NDefines.NSupply.FLOATING_HARBOR_BASE_SUPPLY = 20 -- 15
-NDefines.NSupply.FLOATING_HARBOR_BASE_DURATION = 30 -- 21
-NDefines.NSupply.FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 3.9 -- 2.6
-NDefines.NSupply.FLOATING_HARBOR_STARTING_PENALTY_PER_PROVINCE = 0.8 -- 0.8
-NDefines.NSupply.FLOATING_HARBOR_ADDED_PENALTY_PER_PROVINCE = 0.8 -- 0.8
-
-
-NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.60 -- 0.30
-
-NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 4.0 -- 2.2
-
-
-NDefines.NSupply.RAILWAY_BASE_FLOW = 10.0 -- 10.0
-NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 10 --5.0
-NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 10 -- 5.0
-
-
-NDefines.NSupply.NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.8 -- 0.34
-
-
-NDefines.NSupply.NAVAL_BASE_FLOW = 15.0 -- 15.0 --used to also be NAVAL_FLOW_PER_LEVEL, presumed intended to be this
-NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 5.0 --5.0
-
-
-NDefines.NSupply.SUPPLY_PATH_MAX_DISTANCE = 20 --15
-NDefines.NSupply.RAILWAY_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.1 --0.3
-NDefines.NSupply.SUPPLY_DISRUPTION_DAILY_RECOVERY = 3.0
-
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 4  -- vilkata defines , was 5
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2  -- vilkata defines , was 4
 
 --Thanks Alex
 NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 1  -- Resource cost for conversion
