@@ -20,9 +20,9 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = 0.05
-				resistance_damage_to_garrison = 0.05
-				drift_defence_factor = 0.05
+				stability_factor = 0.025
+				#resistance_damage_to_garrison = 0.05
+				#drift_defence_factor = 0.05
 			}
 	
 			cost = 75
@@ -44,14 +44,11 @@ ideas = {
 					rule = lastorical_national_ideas
 					option = on
 				}
-				NOT = {
-					has_government = democratic			
-				}
 			}
 			
 			modifier = {
 				stability_factor = 0.10
-				resistance_damage_to_garrison = -0.10
+				resistance_damage_to_garrison = 0.20
 				drift_defence_factor = 0.10
 			}
 			
@@ -77,17 +74,14 @@ ideas = {
 					rule = lastorical_national_ideas
 					option = on
 				}
-				OR = {
-					has_government = democratic					
-				}
 				
 			}
 			
 			#Cost = 125
 
 			modifier = {
-				stability_factor = 0.1
-				resistance_damage_to_garrison = 0.10
+				stability_factor = 0.05
+				resistance_damage_to_garrison = -0.10
 				drift_defence_factor = -0.50
 			}
 			cancel_if_invalid = no

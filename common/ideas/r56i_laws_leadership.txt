@@ -55,7 +55,7 @@ ideas = {
 
 
 			modifier = {
-				max_command_power = 25
+				max_command_power = 30
 			}
 
 			
@@ -105,7 +105,7 @@ ideas = {
 			}
 			
 			modifier = {
-				research_speed_factor = 0.08
+				research_speed_factor = 0.05
 			}
 
 			cost = 150
@@ -139,7 +139,7 @@ ideas = {
 			}
 			
 			modifier = {
-				army_org_factor = 0.03
+				army_org_factor = 0.05
 			}
 			cost = 150
 			
