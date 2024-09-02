@@ -996,7 +996,7 @@
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 4
@@ -1026,7 +1026,7 @@
 focus = {
 		id = JAP_black_dragon_society
 		icon = GFX_focus_SWI_embrace_rote_drei
-		cost = 10
+		cost = 5
 		prerequisite = { 
 			focus = JAP_modern_shogunate
 			focus = JAP_showa_restoration
@@ -1098,7 +1098,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1394,7 +1394,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -1667,7 +1667,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -2385,7 +2385,7 @@ focus = {
 		y = 0
 		relative_position_id = JAP_purge_the_kodoha_faction
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 3
@@ -2596,7 +2596,7 @@ focus = {
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 		dynamic = yes  
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -3486,7 +3486,7 @@ focus = {
 		y = 0
 		relative_position_id = JAP_the_manchurian_project 
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
