@@ -91,19 +91,16 @@ ideas = {
 					rule = lastorical_national_ideas
 					option = on
 				}
-				NOT = {
-					has_government = fascism
-				}
 			}
 			
 			modifier = {
 				conscription_factor = 0.05
 				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.15
+				production_speed_infrastructure_factor = 0.1
 				stability_factor = -0.05
 			}
 
-			cost = 200
+			cost = 150
 
 			ai_will_do = {
 				factor = 0
