@@ -754,10 +754,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
-			add_timed_idea = {
-				idea = public_school_funding
-				days = 120
-			} 
+			#add_timed_idea = {
+			#	idea = public_school_funding
+			#	days = 120
+			#} 
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -795,7 +795,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 14
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}	
@@ -3872,7 +3872,7 @@ focus_tree = {
 	focus = {
 		id = ENG_time_of_economic_prosperity
 		icon = GFX_focus_eng_the_sun_never_sets
-		cost = 15
+		cost = 10
 		prerequisite = {
 			focus = ENG_attract_colonial_investors
 			focus = ENG_Open_our_Markets
