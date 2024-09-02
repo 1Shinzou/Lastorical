@@ -12080,110 +12080,7 @@ ai_will_do = {
 		}
 	}
 
-	focus = {
-		id = SOV_seek_a_defense_pact_with_the_allies
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SOV_anti_fascist_policies }
-		x = 0
-		y = 1
-		relative_position_id = SOV_anti_fascist_policies
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		bypass = {
-			OR = {
-				NOT = { country_exists = FRA }
-				FRA = { has_capitulated = yes }
-			}
-			NOT = {
-				any_other_country = {
-					is_faction_leader = yes
-					SOV_is_valid_collective_security_target = yes
-				}
-			}
-		}
-
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			if = { #FRA is default target
-				limit = {
-					country_exists = FRA
-					FRA = {	SOV_is_valid_collective_security_target = yes }
-				}
-				set_variable = { SOV_collective_security_target = FRA }
-				FRA = { country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 } }
-			}
-			else_if = { #ENG is first fallback target
-				limit = {
-					country_exists = ENG
-					is_faction_leader = yes
-					ENG = {	SOV_is_valid_collective_security_target = yes }
-				}
-				set_variable = { SOV_collective_security_target = FRA }
-				ENG = { country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 } }
-			}
-			else_if = { #Non-Fascist European faction leader is next
-				limit = {
-					any_country = {
-						is_faction_leader = yes
-						capital_scope = { is_on_continent = europe }
-						SOV_is_valid_collective_security_target = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						capital_scope = { is_on_continent = europe }
-						SOV_is_valid_collective_security_target = yes
-					}
-					ROOT = { set_variable = { SOV_collective_security_target = PREV } }
-					country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 }
-				}
-			}
-			else_if = { #Alright I don't really care anymore, pick whoever is left alive
-				limit = {
-					any_other_country = {
-						is_faction_leader = yes
-						SOV_is_valid_collective_security_target = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						SOV_is_valid_collective_security_target = yes
-					}
-					ROOT = { set_variable = { SOV_collective_security_target = PREV } }
-					country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 }
-				}
-			}
-
-			custom_effect_tooltip = SOV_seek_a_defense_pact_with_the_allies_event_effects_tt
-
-			if = {
-				limit = {
-					country_exists = POL
-					POL = { SOV_is_valid_collective_security_target = yes }
-					var:SOV_collective_security_target = {
-						capital_scope = { is_on_continent = europe }
-					}
-				}
-				custom_effect_tooltip = SOV_seek_a_defense_pact_with_the_allies_poland_tt
-			}
-		}
-	}
+	
 
 	focus = {
 		id = SOV_the_khakimov_proposal
@@ -12230,10 +12127,10 @@ ai_will_do = {
 	focus = {
 		id = SOV_eradicate_western_fascism
 		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = SOV_seek_a_defense_pact_with_the_allies }
+		prerequisite = { focus = SOV_anti_fascist_policies }
 		x = 0
 		y = 1
-		relative_position_id = SOV_seek_a_defense_pact_with_the_allies
+		relative_position_id = SOV_anti_fascist_policies
 		cost = 5
 
 		ai_will_do = {
