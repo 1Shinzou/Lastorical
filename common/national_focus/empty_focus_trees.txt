@@ -28,6 +28,10 @@ focus_tree = {
 		}
 		modifier = {
 			add = 10
+			tag = ALB
+		}
+		modifier = {
+			add = 10
 			tag = VEN
 		}
 		modifier = {
