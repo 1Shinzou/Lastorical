@@ -722,7 +722,7 @@ on_actions = {
 				}
 		add_corps_commander_role = {
 		character = FRA_jean_de_lattre_de_tassigny
-			traits = { cavalry_leader armor_officer trickster organizer }
+			traits = { cavalry_leader armor_officer trickster organizer desert_fox }
 					skill=5
 					attack_skill=4
 					defense_skill=3
