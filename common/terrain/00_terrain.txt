@@ -178,6 +178,9 @@ categories =  {
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = desert
+		units = {
+			attack = -0.05
+		}
 		
 		# sickness_chance = 1.0
 		
