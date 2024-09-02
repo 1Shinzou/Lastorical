@@ -875,7 +875,7 @@
 		y = 2
 		relative_position_id = JAP_public_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -906,7 +906,7 @@
 		x = 2
 		y = 1
 		relative_position_id = JAP_coal_liquification
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -960,7 +960,7 @@
 		y = 1
 		relative_position_id = JAP_coal_liquification
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1576,7 +1576,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_public_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1952,7 +1952,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_japanese_settlement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -2751,7 +2751,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_tokyo_aluminum_plant
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -3510,7 +3510,7 @@ focus = {
 
 
 		completion_reward = {
-			army_experience = 30
+			army_experience = 100
 		}
 	}
 
