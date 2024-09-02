@@ -746,7 +746,7 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = ENG_Provoke_british_patriotism
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 50
 		}	
@@ -2559,7 +2559,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = uk_commonwealth_focus
 
-		cost = 5
+		cost = 1
 
 		available = {
 			any_country = {
@@ -2627,7 +2627,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = uk_india_focus
 
-		cost = 5
+		cost = 1
 
 		available = {
 			any_country = {
@@ -2703,7 +2703,7 @@ focus_tree = {
 			}
 		} 
 		
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -2769,7 +2769,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 5
+		cost = 1
 
 		available = {
 			any_country = {

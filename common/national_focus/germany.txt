@@ -2294,7 +2294,7 @@ focus_tree = {
 	focus = {
 		id = GER_reform_uranprojekt
 		icon = GFX_focus_research
-		cost = 10.00
+		cost = 5
 		# prerequisite = {
 		# 	focus = GER_appoint_economic_positions
 		# }
@@ -2560,6 +2560,7 @@ focus_tree = {
 		icon = GFX_focus_mex_privatisation
 		cost = 10
 		prerequisite = {
+			focus = GER_grosraumwirtschaft
 			focus = GER_autobahn
 		}
 		x = 2
@@ -2626,6 +2627,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
+			focus = GER_grosraumwirtschaft
 			focus = GER_autobahn
 		}
 		x = -2
@@ -2706,6 +2708,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = GER_grosraumwirtschaft
+			focus = GER_autobahn
 		}
 		available = {
 			has_full_control_of_state = 60
@@ -2733,6 +2736,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GER_grosraumwirtschaft
+			focus = GER_autobahn
 		}
 		
 		x = 2
@@ -3155,7 +3159,7 @@ focus_tree = {
 	focus = {
 		id = GER_support_military_research
 		icon = GFX_focus_research
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = GER_develop_the_heer_r56
 		}
@@ -3163,7 +3167,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			num_of_factories > 99
+			
 		}
 		ai_will_do = {
 			factor = 50

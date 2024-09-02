@@ -51,7 +51,7 @@ ideas = {
 			}
 			
 			modifier = {
-				army_core_defense_factor = 0.05
+				conscription = 0.005
 				mobilization_speed = 0.25
 				#justify_war_goal_time = -0.25
 				political_power_cost = 0.05
