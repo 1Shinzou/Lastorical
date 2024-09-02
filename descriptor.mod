@@ -8,5 +8,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Last Stand - LASTORICAL"
-supported_version="1.14.7"
+supported_version="1.14.8"
 remote_file_id="2988546232"
