@@ -2014,7 +2014,7 @@ focus = {
 		y = 2
 		relative_position_id = JAP_guide_the_zaibatsus
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2260,7 +2260,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_supremacy_of_will
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2293,7 +2293,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_supremacy_of_will
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2344,7 +2344,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_spiritual_mobilization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -3073,7 +3073,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_strengthen_the_divine_wind
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3522,7 +3522,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -3599,7 +3599,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3641,7 +3641,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_modern_artillery
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
