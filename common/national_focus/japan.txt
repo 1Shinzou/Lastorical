@@ -4182,7 +4182,7 @@ focus = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -4192,7 +4192,7 @@ focus = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
