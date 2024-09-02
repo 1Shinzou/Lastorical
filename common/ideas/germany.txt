@@ -32,7 +32,7 @@ ideas = {
 			removal_cost = -1
 			picture = SWE_neither_death_nor_dishonor
 			modifier = {
-				industrial_capacity_factory = 0.025
+				industrial_capacity_factory = 0.05
 				stability_factor = -0.05
 			}
 		}
