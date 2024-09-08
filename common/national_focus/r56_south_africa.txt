@@ -280,7 +280,7 @@ focus_tree = {
     }
 	focus = {
         id = SAF_industrial_innovations
-        icon = GFX_focus_research
+        icon = GFX_goal_generic_production
         prerequisite = { focus = SAF_expand_iscor_pretoria_works focus = SAF_magazine_hill_ammunition_plant }
         relative_position_id = SAF_magazine_hill_ammunition_plant
         x = -1
@@ -291,13 +291,13 @@ focus_tree = {
 			}
 		available_if_capitulated = yes
         completion_reward = {
-        #    add_tech_bonus = {
-        #        name = industrial_bonus
-        #        bonus = 1
-        #        uses = 1
-        #        category = industry
-        #    }
-            add_research_slot = 1
+            add_tech_bonus = {
+                name = industrial_bonus
+                bonus = 1
+                uses = 1
+               category = industry
+            }
+            
         }
         search_filters = { FOCUS_FILTER_RESEARCH }
     }
@@ -642,7 +642,7 @@ focus_tree = {
     }
     focus = {
         id = SAF_military_innovations
-        icon = GFX_focus_research2
+        icon = GFX_goal_tfv_generic_tech_sharing
         prerequisite = { focus = SAF_locally_built_armored_cars  }
         prerequisite = { focus = SAF_local_tank_program }
         prerequisite = { focus = SAF_SAR_and_H_brigade }
@@ -656,7 +656,7 @@ focus_tree = {
             }
         available_if_capitulated = yes
         completion_reward = {
-            add_research_slot = 1
+            add_ideas = RAJ_research_grants_idea
         }
         search_filters = { FOCUS_FILTER_RESEARCH }
     }
