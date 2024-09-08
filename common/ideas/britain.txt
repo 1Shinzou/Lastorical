@@ -479,7 +479,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = cze_planning_bonus
+			picture = FRA_scw_intervention_nationalists_focus
 			
 			modifier = {
 				planning_speed = 0.1

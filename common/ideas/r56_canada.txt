@@ -1219,15 +1219,13 @@ ideas = {
 		r56_CAN_restructured_government_02 = {
 
 			name = r56_CAN_restructured_government
-			picture = generic_improved_industries
+			picture = man_five_year_plan_industry
 			allowed = {
 				always = no
 			}
 			
 			allowed_civil_war = {
 			}
-			
-			picture = r56_CAN_capitol
 			
 			removal_cost = -1
 			
