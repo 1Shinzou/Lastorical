@@ -3684,8 +3684,8 @@ focus_tree = {
 			factor = 2
 		}		
 		completion_reward = {
-			add_to_variable = { GER_streamline_logistics_supply_combat_penalties_on_core_factor = -0.05 } 
-			custom_effect_tooltip = GER_streamline_logistics_tt	
+			#add_to_variable = { GER_streamline_logistics_supply_combat_penalties_on_core_factor = -0.05 } 
+			#custom_effect_tooltip = GER_streamline_logistics_tt	
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = 10
