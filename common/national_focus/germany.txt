@@ -2870,7 +2870,7 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_france_invasion
 		icon = GFX_goal_generic_construction2
-		cost = 5.00
+		cost = 1
 		
 		prerequisite = {
 			focus = GER_anschluss
@@ -3117,7 +3117,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		x = 48
 		y = 0
-		cost = 10
+		cost = 5
 		completion_reward = {
 			#add_dynamic_modifier = {
 			#	modifier = GER_develop_the_heer_r56_modifier
@@ -3186,7 +3186,7 @@ focus_tree = {
 	focus = { 
 		id = GER_mobile_warfare 
 		icon = GFX_goal_generic_army_tanks
-		cost = 10
+		cost = 5
 		prerequisite = {
 		 	focus = GER_develop_the_heer_r56
 		}
@@ -3218,7 +3218,7 @@ focus_tree = {
 	focus = {
 		id = GER_build_panzer_army
 		icon = GFX_focus_generic_tank_production
-		cost = 10
+		cost = 5
 		# prerequisite = {
 		# 	focus = GER_prepare_france_invasion
 		# }
@@ -3378,7 +3378,7 @@ focus_tree = {
 		id = GER_soviet_mil_cooperation
 		text = GER_soviet_treaty
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		cost = 5.00
+		cost = 1
 		prerequisite = {
 			focus = GER_mobile_warfare focus = GER_superior_firepower focus = GER_support_military_research
 
@@ -4165,7 +4165,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_anti_comitern_pact
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2.5	
 		}
@@ -4532,7 +4532,7 @@ focus_tree = {
 	focus = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 5.00
+		cost = 10
 		prerequisite = {
 			focus = GER_prepare_poland_invasion
 		}
@@ -4588,7 +4588,7 @@ focus_tree = {
 	focus = {
 		id = GER_prepare_poland_invasion
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 1
 		prerequisite = {
 			focus = GER_anschluss
 			
