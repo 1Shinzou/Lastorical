@@ -202,40 +202,27 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = ROM_surrender_contested
-			84 = { is_owned_by = ROM }
-			82 = { is_owned_by = ROM }
-			83 = { is_owned_by = ROM }
 		}
 		bypass = {
-			OR = {
-				664 = {
-					OWNER = {
-						has_war_with = ROOT
-					}
-				}
-				NOT = {
-					ROM = {
-						controls_state = 84
-						controls_state = 82
-						controls_state = 83
-					}
-				}
-			}
 		}
 		completion_reward = {
 			HUN = {
-				transfer_state = 84
-				transfer_state = 82
-				transfer_state = 83
-			}
 			add_offsite_building = {
 				type = industrial_complex
-				level = 5
+				level = 2
 			}
 			add_offsite_building = {
 			type = arms_factory
-			level = 5
+			level = 2
+			}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			add_offsite_building = {
+			type = arms_factory
+			level = 2
 			}
 			
 		}
@@ -3118,7 +3105,6 @@ focus_tree = {
 	x = -1
 	y = 1
 	available = {
-		76 = { is_owned_by = ROM }
 		77 = { is_owned_by = ROM }
 	}
 	bypass = {
@@ -3130,7 +3116,6 @@ focus_tree = {
 				}
 				NOT = {
 					ROM = {
-						controls_state = 76
 						controls_state = 77
 					}
 				}
@@ -3139,15 +3124,11 @@ focus_tree = {
 	completion_reward = { 
 		add_offsite_building = {
 			type = industrial_complex
-			level = 4
+			level = 2
 		}
 		add_offsite_building = {
 			type = arms_factory
-			level = 4
-		}
-		HUN = {
-			transfer_state = 76
-			add_state_core = 76
+			level = 2
 		}
 		BUL = {
 			transfer_state = 77
