@@ -16,13 +16,13 @@ characters={
 			}
 			country_leader={
 				ideology=oligarchism
-				traits={ fascist_sympathies anti_communist }
+				traits={ fascist_sympathies anti_communist conservative_nationalist }
 				expire="1965.1.1.1"
 				id=500
 			}
 			country_leader={
 				ideology=fascism_ideology
-				traits={ anti_communist }
+				traits={ anti_communist conservative_nationalist }
 				expire="1965.1.1.1"
 				id=503
 			}

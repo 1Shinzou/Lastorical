@@ -758,20 +758,20 @@ on_actions = {
 	HUN = {
 		add_corps_commander_role = {
 			character = HUN_geza_lakatos
-			skill=5
-			traits = { infantry_leader trickster hill_fighter }
-			attack_skill=4
-			defense_skill=3
+			traits = { infantry_leader trickster skilled_staffer commando }
+			skill=6
+			attack_skill=5
+			defense_skill=6
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=4
 		}
 		add_corps_commander_role = {
 			character = HUN_ferenc_feketehalmyczeydner
-			traits={ organizer infantry_leader hill_fighter trickster }
-			skill=4
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
+			traits = { organizer infantry_leader }
+			skill=6
+			attack_skill=5
+			defense_skill=4
+			planning_skill=5
 			logistics_skill=3
 		}
 	}
