@@ -1,4 +1,3 @@
-NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5,					-- over combat width penalty per %.
 
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
