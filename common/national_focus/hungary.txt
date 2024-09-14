@@ -1840,7 +1840,10 @@ focus = {
 			level = 8
 		}
 		GER = {
-			puppet = HUN
+			set_autonomy = {
+					target = HUN
+					autonomy_state = autonomy_satellite
+				}
 		}
 	}
  }
@@ -1866,7 +1869,10 @@ focus = {
 			level = 8
 		}
 		ITA = {
-			puppet = HUN
+			set_autonomy = {
+					target = HUN
+					autonomy_state = autonomy_satellite
+				}
 		}
 	}
  }

@@ -8577,7 +8577,10 @@ focus_tree = {
 			level = 8
 		}
 		GER = {
-			puppet = BUL
+				set_autonomy = {
+					target = BUL
+					autonomy_state = autonomy_satellite
+				}
 		}
 	}
 
@@ -8603,7 +8606,10 @@ focus_tree = {
 			level = 8
 		}
 		ITA = {
-			puppet = BUL
+				set_autonomy = {
+					target = BUL
+					autonomy_state = autonomy_satellite
+				}
 		}
 	}
  }

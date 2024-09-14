@@ -3293,7 +3293,10 @@ focus_tree = {
 			level = 8
 		}
 		GER = {
-			puppet = ROM
+				set_autonomy = {
+					target = ROM
+					autonomy_state = autonomy_satellite
+				}
 		}
 	}
 
@@ -3320,7 +3323,10 @@ focus_tree = {
 			level = 8
 		}
 		ITA = {
-			puppet = ROM
+				set_autonomy = {
+					target = ROM
+					autonomy_state = autonomy_satellite
+				}
 		}
 	}
  }
