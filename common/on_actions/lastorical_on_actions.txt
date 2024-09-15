@@ -622,6 +622,7 @@ on_actions = {
 						AND = {
 							is_playable_country = yes
 							NOT = {
+								original_tag = MAN
 								original_tag = SPR
 								original_tag = FIN
 								original_tag = POR

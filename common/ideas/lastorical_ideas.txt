@@ -176,5 +176,18 @@ ideas = {
 				trade_laws_cost_factor = 10000
 			}
 		}
+		MAN_support_japan_idea = {
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+			picture = imperial_glory_idea
+			modifier = {
+			   military_factory_donations = 5
+			   industrial_factory_donations = 5
+			   dockyard_donations = 5
+			}
+		}
 	}
 }

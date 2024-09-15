@@ -3159,7 +3159,7 @@ focus = {
 		}
 
 		completion_reward = {
-			611 = {
+			528 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -3193,13 +3193,21 @@ focus = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = JAP }
+			
 		}
 
 		completion_reward = {
 			
 			#mark_focus_tree_layout_dirty = yes
 			JAP= {
+				give_resource_rights = {
+					receiver = JAP
+					state = 716
+				}
+				give_resource_rights = {
+					receiver = JAP
+					state = 714
+				}
 				add_resource = {
 					type = steel
 					amount = 48
@@ -3224,11 +3232,11 @@ focus = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = JAP }
 		}
 
 
 		completion_reward = {
+
 			716 = {
 				add_resource = {
 					type = steel
@@ -3254,7 +3262,7 @@ focus = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = JAP}
+			
 		}
 
 
@@ -3284,12 +3292,16 @@ focus = {
 		}
 
 		available = {
-			714 = { is_fully_controlled_by = JAP }
+			
 		}
 
 
 		completion_reward = {
-			
+				give_resource_rights = {
+					receiver = JAP
+					state = 714
+				}
+
 			714 = {
 				add_resource = {
 					type = oil
@@ -3327,9 +3339,7 @@ focus = {
 		}
 
 		available = {
-			JAP = { 
-				controls_state = 717
-			}
+			
 		}
 
 		completion_reward = {
@@ -3360,9 +3370,7 @@ focus = {
 		}
 
 		available = {
-			JAP = {
-				has_full_control_of_state = 715
-			}
+			
 		}
 
 		completion_reward = {
@@ -3404,9 +3412,7 @@ focus = {
 		}
 
 		available = {
-			JAP = {
-				has_full_control_of_state = 716
-			}
+			
 		}
 
 
@@ -3449,11 +3455,7 @@ focus = {
 		}
 
 		available = {
-			JAP = {
-				has_full_control_of_state = 715
-				has_full_control_of_state = 610
-				has_full_control_of_state = 328
-			}
+			
 		}
 
 

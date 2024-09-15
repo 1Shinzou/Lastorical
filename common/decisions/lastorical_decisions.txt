@@ -479,6 +479,34 @@ fin_war_eco = {
 			}
 		}
 	}
+	JAP_annex_MAN = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			man
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = JAP
+			MAN = { is_ai = yes }
+		}
+		visible = {
+			original_tag = JAP
+			MAN = { is_ai = yes }
+			is_ai = NO
+			country_exists = MAN
+		}
+		complete_effect = {
+			annex_country = { target = MAN transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = MAN
+						is_controlled_by = JAP
+					}
+				set_compliance = 100
+			}
+		}
+	}
 	FIN_annex_SPR = {
 		# icon used to be here rip icon 04/29/2024
 		targets = {
