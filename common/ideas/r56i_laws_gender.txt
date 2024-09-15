@@ -92,9 +92,6 @@ ideas = {
 					rule = lastorical_national_ideas
 					option = on
 				}
-				NOT = {
-					has_government = fascism
-				}
 			}
 			
 			modifier = {
