@@ -243,8 +243,7 @@ ideas = {
 			removal_cost = -1
 				
 			modifier = {
-				weekly_manpower = 150
-				MONTHLY_POPULATION = 0.33
+				weekly_manpower = 1000
 			}
 		}		
 		

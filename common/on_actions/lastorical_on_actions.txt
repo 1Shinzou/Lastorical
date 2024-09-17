@@ -1720,12 +1720,10 @@ on_actions = {
 								tag = CAN
 								tag = BRA
 								tag = MEX
-								tag = IRE
 								tag = SAF
 								tag = AST
-								tag = NZL
 								tag = RAJ
-								tag = NOR
+								tag = PHI
 								tag = FRA
 							}
 						}

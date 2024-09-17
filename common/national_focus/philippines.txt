@@ -323,7 +323,7 @@ focus_tree = {
 				state = 627
 		}
 	}
-	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_CHROMIUM FOCUS_FILTER_STEEL}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 	focus = {
@@ -397,7 +397,7 @@ focus = {
 			state = 627
 	 }
  }
- search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STEEL}
+ search_filters = { FOCUS_FILTER_INDUSTRY }
 }
 
 
@@ -475,7 +475,7 @@ focus = {
 				category = synth_resources
 			}
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH  FOCUS_FILTER_OIL}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -699,9 +699,9 @@ focus = {
 		}
 		completion_reward = {
     	add_ideas = PHI_american_advisors
-		add_tech_bonus = {
+		add_doctrine_cost_reduction = {
 			name = PHI_american_doctrines
-			bonus = 1
+			cost_reduction = 1
 			uses = 2
 			category = land_doctrine
 		 }
@@ -1326,7 +1326,6 @@ focus = {
 				category = radar_tech
 			}			
 			air_experience = 25
-			add_ideas = arg_aviation_schools
 			#1x 50% reduction in an air doctrine research
 
 		}
@@ -1678,7 +1677,7 @@ focus = {
 		id = PHI_post_indenpence_stabilization
 		icon = GFX_focus_ARG_defense_and_democracy
 
-		x = 27
+		x = 25
 		y = 0
 		cost = 10
 
@@ -1703,7 +1702,7 @@ focus = {
 		prerequisite = { focus = PHI_post_indenpence_stabilization}
 		mutually_exclusive = { focus = PHI_a_new_regime }
 
-		x = 27
+		x = 25
 		y = 1
 		cost = 10
 
@@ -1729,7 +1728,7 @@ focus = {
 		prerequisite = { focus = PHI_european_intervention }
 
 
-		x = 26
+		x = 24
 		y = 4
 		cost = 10
 
@@ -1777,7 +1776,7 @@ focus = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = PHI_island_infrastrcture }
 
-		x = 26
+		x = 24
 		y = 5
 		cost = 10
 
@@ -1832,7 +1831,7 @@ focus = {
 		icon = GFX_focus_eng_unite_the_anglosphere
 		prerequisite = { focus = PHI_follow_the_american_way }
 
-		x = 27
+		x = 25
 		y = 2
 		cost = 10
 
@@ -1859,7 +1858,7 @@ focus = {
 		icon = GFX_focus_usa_focus_on_europe
 		prerequisite = { focus = PHI_elect_new_congressmen }
 
-		x = 27
+		x = 25
 		y = 3
 		cost = 10
 
@@ -1897,7 +1896,7 @@ focus = {
 			}
 		}
 
-		x = 28
+		x = 26
 		y = 5
 		cost = 10
 
@@ -1936,7 +1935,7 @@ focus = {
 			country_exists = ENG
 		}
 
-		x = 28
+		x = 26
 		y = 4
 		cost = 5
 
@@ -1967,7 +1966,7 @@ focus = {
 		threat > 0.50
 		}
 
-		x = 30
+		x = 28
 		y = 4
 		cost = 5
 
@@ -1988,7 +1987,7 @@ focus = {
 		icon = GFX_focus_SWE_undermine_fascism
 		prerequisite = { focus = PHI_worldwide_intervention }
 
-		x = 30
+		x = 28
 		y = 5
 		cost = 10
 
@@ -2011,7 +2010,7 @@ focus = {
 	icon = GFX_focus_SWE_lottakoren
 	prerequisite = { focus = PHI_ally_funded_development}
 
-	x = 28
+	x = 26
 	y = 6
 	cost = 10
 
@@ -2023,12 +2022,12 @@ focus = {
 
 	completion_reward = {
 		add_ideas = PHI_accept_refugees
-		#327 = {
-		#   add_manpower = 250000
-		#}
-		#623 = {
-		#	add_manpower = 250000
-		#}
+		327 = {
+		  add_manpower = 25000
+		}
+	623 = {
+			add_manpower = 25000
+		}
  	}
  search_filters = { FOCUS_FILTER_MANPOWER }
 }
@@ -2038,7 +2037,7 @@ focus = {
 	icon = GFX_focus_generic_full_social_mobilization
 	prerequisite = { focus = PHI_fascist_defense}
 
-	x = 30
+	x = 28
 	y = 6
 	cost = 10
 
