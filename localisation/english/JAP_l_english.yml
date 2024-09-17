@@ -241,8 +241,8 @@ JAP_emperors_untiversity:0 "University Expanded"
  JAP_taiwan_fob_prepare_tt:0 "§YTaiwan§! will be prepared as a staging ground to allow for a strike on the §YPhilippines§! as well."
  ##Fixed
 
- JAP_develop_mengjiang:0 "Develop Mengjiang"
- JAP_develop_mengjiang_desc:0 "The establishment of Mengjiang presents ourselves with another opportunity to develop the local industry for our own economic growth."
+ JAP_develop_mengjiang:0 "Develop Japanese Civilian Industries"
+ JAP_develop_mengjiang_desc:0 " "
 
  JAP_nishina_okochi_directive:0 "Nishina-Ōkōchi Directive"
  JAP_nishina_okochi_directive_desc:0 "The ultimate weapon to destroy our enemies is within reach. The efforts of Yoshio Nishina and Masatoshi Ōkōchi have proven the possibility of the use of nuclear weapons in warfare, we must allow them to continue their work in order to obtain such a powerful weapon."
@@ -524,6 +524,8 @@ JAP_emperors_untiversity:0 "University Expanded"
  JAP_joint_industrial_planning:0 "Joint Industrial Planning"
  JAP_joint_industrial_planning_desc:0 "As our nations have come closer economically, we may begin shared industrial plans to make Asia more economically sound."
  JAP_civilian_investment:0 "Civilian Investment"
+ JAP_extra_research_slot:0 "National Resource Research Center"
+ JAP_extra_research_slot_desc:0 " "
 
  JAP_island_colonization_tt:0 "Unlocks §HDecisions§! to improve island possessions in the Pacific."
 

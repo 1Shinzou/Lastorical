@@ -954,6 +954,27 @@ on_actions = {
 		}
 	}
 
+	MAN = {
+		add_corps_commander_role = {
+			character = MAN_aisin_gioro_xiqia
+			traits={ career_officer harsh_leader naval_invader organizer infantry_leader cavalry_leader panzer_leader trait_engineer commando trickster }
+			skill=6
+			attack_skill=6
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=7
+		}
+		add_corps_commander_role = {
+			character = MAN_zhang_haipeng
+			traits={ brilliant_strategist naval_invader trait_reckless organizer infantry_leader cavalry_leader panzer_leader trait_engineer trickster }
+			skill=6
+			attack_skill=6
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=7
+		}
+	}
+
 	SAF = {
 		add_corps_commander_role = {
 			character = SAF_william_poole

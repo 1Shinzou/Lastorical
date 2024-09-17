@@ -27,16 +27,15 @@ characters={
 				small="GFX_idea_MAN_zhang_haipeng"
 			}
 		}
-		# corps_commander={
-		# 	skill=2
-		# 	attack_skill=2
-		# 	defense_skill=2
-		# 	planning_skill=1
-		# 	logistics_skill=2
-		# 	legacy_id=-1
-		# }
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
 	}
-
 	MAN_zhang_jinghui={
 		name=MAN_zhang_jinghui
 		portraits={
@@ -82,35 +81,15 @@ characters={
 			}
 		}
 		gender = female
-		advisor={
-			slot = high_command
-			idea_token = yoshiko_kawashima
-			ledger = army
-			allowed = {
-				original_tag = MAN
-			}
-			available = {
-				has_completed_focus = MAN_rommel_of_the_east
-			}
-			traits = {
-				army_armored_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 8.000
-			}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 		}
-		
-			corps_commander={
-				traits={ trait_reckless media_personality armor_officer war_hero trickster panzer_leader }
-				skill=6
-				attack_skill=6
-				defense_skill=4
-				planning_skill=2
-				logistics_skill=3
-				legacy_id=4
-			}
-		
 	}
 	MAN_zhao_shangzhi={
 		name=MAN_zhao_shangzhi

@@ -274,7 +274,7 @@
 		y = 1
 		relative_position_id = MAN_collective_farms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -308,7 +308,7 @@
 		y = 1
 		relative_position_id = MAN_law_university
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -875,7 +875,7 @@
 		y = 2
 		relative_position_id = MAN_invite_japanese_investors
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -1088,7 +1088,7 @@
 	focus = {
 		id = MAN_alliance_with_the_kwantung_army
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = MAN_first_five_year_plan }
+		prerequisite = { focus = MAN_first_five_year_plan  }
 		x = 3
 		y = 1
 		relative_position_id = MAN_first_five_year_plan
@@ -1278,44 +1278,7 @@
 
 		}
 	}
-	focus = {
-		id = MAN_rommel_of_the_east
-		icon = GFX_goal_generic_secret_weapon
-
-		prerequisite = {
-			focus = MAN_support_japan
-		
-		}
-		x = 10
-		y = 6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-	}
-
-		available = {
-
-		}
-		
-	bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-	}
-
-		completion_reward = {
-			show_ideas_tooltip = yoshiko_kawashima
-
-		}
-	}
+	
 	focus = {
 		id = MAN_support_japan
 		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
