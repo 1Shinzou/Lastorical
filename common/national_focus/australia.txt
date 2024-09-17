@@ -887,34 +887,13 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
-				add_tech_bonus = {
-					name = AST_cac_woomera
-					bonus = 3.0
-					uses = 1
-					category = cat_strategic_bomber
-					category = tactical_bomber
-					category = naval_air
-				}
-				add_tech_bonus = {
-					name = AST_cac_woomera
-					bonus = 1.0
-					uses = 1
-					category = cat_strategic_bomber
-				}
-			}
-			else = {
+		
 				add_tech_bonus = {
 					name = AST_cac_woomera
 					bonus = 2
 					uses = 2
-					category = tactical_bomber
-					category = naval_air
+					category = cat_torpedoes
+					category = cat_air_bombs
 				}
 				create_equipment_variant = {
 					name = "CAC Woomera" #
@@ -929,7 +908,6 @@
 					}
 				}
 			}
-		}
 	}
 
 	focus = {
@@ -1162,7 +1140,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = naval_bomber
+				category = cat_torpedoes
 			}
 		}
 	}
