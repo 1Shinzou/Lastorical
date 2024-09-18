@@ -80,7 +80,7 @@ focus_tree = {
 					has_state_flag = BUL_initial_bulgarian_state_flag
 					NOT = { state = 48 }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1065,7 +1065,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_darzhavna_voenna_fabrika
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = infantry_weapons
 				category = support_tech
@@ -6344,7 +6344,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_power_to_the_tsar focus = BUL_oppose_the_royal_dictatorship }
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		relative_position_id = BUL_power_to_the_tsar
-		x = -3
+		x = -2
 		y = 1
 		cost = 5
 		mutually_exclusive = { focus = BUL_support_macedonian_organizations }
@@ -6390,118 +6390,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = BUL_support_macedonian_organizations
-
-		prerequisite = { focus = BUL_power_to_the_tsar focus = BUL_oppose_the_royal_dictatorship }
-		icon = GFX_focus_BUL_support_macedonian_organizations
-		relative_position_id = BUL_condemn_macedonian_organizations
-		x = 2
-		y = 0
-		cost = 5
-
-		mutually_exclusive = { focus = BUL_condemn_macedonian_organizations }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		completion_reward = {
-			add_threat = 1
-			BUL_zveno_low_loyalty_decrease_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-			custom_effect_tooltip = BUL_support_macedonian_organizations_tt
-			every_country = {
-				limit = {
-					BUL_country_seeks_macedonian_stability = yes
-				}
-				add_opinion_modifier = { 
-					target = BUL
-					modifier = BUL_supported_imro
-				}
-			}
-			#If all Macedonia is already controlled by BUL, update NS and unlock the appropriate decisions
-			if = {
-				limit = {
-					NOT = {
-						any_state = {
-							BUL_is_macedonian_state = yes
-							NOT = { is_fully_controlled_by = ROOT }
-						}
-					}
-				}
-				hidden_effect = {
-					set_country_flag = { flag = BUL_support_imro_flag value = 3 }
-				}
-				if = {
-					limit = {
-						has_idea = BUL_imro_01
-					}
-					swap_ideas = {
-						remove_idea = BUL_imro_01
-						add_idea = BUL_imro_05
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BUL_imro_04
-					}
-					swap_ideas = {
-						remove_idea = BUL_imro_04
-						add_idea = BUL_imro_05
-					}
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = BUL_army_restrictions_aat
-						has_idea = BUL_army_restrictions
-					}
-				}
-				custom_effect_tooltip = BUL_support_macedonian_organizations_rearmament_tt
-			}
-			set_country_flag = { flag = BUL_rearmament_flag value = 2 } #Unlock Pressure to Lift Arms Restrictions decision
-
-			hidden_effect = {
-				news_event = { id = bftb_news.2 hours = 8 random_hours = 4 }
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_dissolve_the_military_union
-
-		prerequisite = { focus = BUL_power_to_the_tsar focus = BUL_oppose_the_royal_dictatorship }
-		icon = GFX_focus_BUL_destroy_the_zveno
-		relative_position_id = BUL_condemn_macedonian_organizations
-		x = 4
-		y = 0
-		cost = 5
-
-		mutually_exclusive = { focus = BUL_cooperate_with_the_zveno }
-
-		available = {
-			NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
-			hidden_trigger = {
-				NOT = { has_country_flag = BUL_zveno_coup_flag } #Zveno CW has not started
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS}
-		completion_reward = {
-			add_political_power = 70
-			add_stability = 0.15
-			add_ideas = BUL_zveno_ns
-			BUL_zveno_high_loyalty_decrease_effect = yes
-			BUL_zveno_medium_popularity_decrease_effect = yes
-			custom_effect_tooltip = BUL_dissolve_the_military_union_tt
-			custom_effect_tooltip = BUL_dissolve_the_military_union_zveno_coup_tt
-		}
-	}
+	
+	
 
 	focus = {
 		id = BUL_cooperate_with_the_zveno
@@ -6509,7 +6399,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_power_to_the_tsar focus = BUL_oppose_the_royal_dictatorship }
 		icon = GFX_focus_BUL_cooperate_with_the_zveno
 		relative_position_id = BUL_condemn_macedonian_organizations
-		x = 6
+		x = 4
 		y = 0
 		cost = 5
 
@@ -7046,6 +6936,10 @@ focus_tree = {
 		available = {
 
 		}
+
+		allow_branch = {
+			no
+		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
@@ -7339,6 +7233,10 @@ focus_tree = {
 				has_war = no
 			}
 			is_subject = no
+		}
+
+		allow_branch = {
+			no
 		}
 		
 		completion_reward = {
@@ -8835,9 +8733,9 @@ focus_tree = {
 
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		relative_position_id = BUL_join_the_tripartite_pact
-		x = -4
+		x = -1
 		y = 2
-		cost = 20
+		cost = 10
 
 		available = {
 			any_state = {
