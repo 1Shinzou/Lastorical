@@ -8705,6 +8705,7 @@ political_actions = {
 			visible = {
 				original_tag = ENG
 				NOT = {has_country_flag = CAN_air_LL}
+				country_exists = CAN
 			}
 	
 			complete_effect = {

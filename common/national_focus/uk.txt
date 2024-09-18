@@ -1575,7 +1575,7 @@ focus_tree = {
 		prerequisite = { focus = naval_rearmament_focus }
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_generic_cruiser2
-		x = 4
+		x = 2
 		y = 1
 		offset = {
 			x = -1
@@ -2016,7 +2016,7 @@ focus_tree = {
 			num_subjects > 0
 		} 
 		icon = GFX_goal_generic_national_unity
-		x = 25
+		x = 26
 		y = 0
 		offset = {
 			x = -2
@@ -2090,10 +2090,10 @@ focus_tree = {
 			}
 		} 
 		icon = GFX_focus_generic_mediterranean_sea_focus
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = ENG_global_defense
-		cost = 4
+		cost = 5
 		completion_reward = {
 			447 = {
 				add_building_construction = {
@@ -2128,10 +2128,10 @@ focus_tree = {
 			}
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = uk_mediterranean_focus
-		cost = 4
+		cost = 1
 		completion_reward = {
 			118 = {
 				add_building_construction = {
@@ -2164,17 +2164,17 @@ focus_tree = {
 	
 	focus = {
 		id = uk_malta_focus 
-		prerequisite = { focus = uk_rock_focus }
+		prerequisite = { focus = uk_mediterranean_focus }
 		available = {
 			116 = {
 				controls_or_subject_of = yes
 			}
 		}		
 		icon = GFX_goal_generic_construct_military
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = uk_rock_focus
-		cost = 4
+		relative_position_id = uk_mediterranean_focus
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -2210,10 +2210,10 @@ focus_tree = {
 		
 		
 		icon = GFX_goal_generic_construct_civilian
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ENG_global_defense
-		cost = 4
+		cost = 5
 
 		available = {
 			336 = {
@@ -2316,10 +2316,10 @@ focus_tree = {
 		id = singapore_focus
 		prerequisite = { focus = uk_asia_focus }
 		icon = GFX_goal_generic_fortify_city
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 4
+		cost = 1
 
 		available = {
 			336 = {
@@ -2362,12 +2362,12 @@ focus_tree = {
 	}
 	focus = {
 		id = sp_landward_forts_focus
-		prerequisite = { focus = singapore_focus }
+		prerequisite = { focus = uk_asia_focus }
 		icon = GFX_goal_generic_construct_military
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = singapore_focus
-		cost = 4
+		relative_position_id = uk_asia_focus
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}	
@@ -2990,7 +2990,7 @@ focus_tree = {
 
 		icon = GFX_goal_support_democracy
 
-		x = 31
+		x = 32
 		y = 0
 		offset = {
 			x = -7
@@ -3000,7 +3000,7 @@ focus_tree = {
 			}
 		}
 		
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 80
 			modifier = {
@@ -3137,7 +3137,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_focus_eng_global_defense
-		x = -5
+		x = -7
 		y = 1
 		relative_position_id = uk_service_focus 
 		
@@ -3740,6 +3740,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			122 = {
+				if = {
+					limit = {
+						122 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			119 = {
 				if = {
 					limit = {
@@ -3954,7 +3973,7 @@ focus_tree = {
 		}
 		
          available = {
-			has_war_support > 0.24
+			has_war_support > 0.25
         }
 
 		available_if_capitulated = yes
@@ -4096,7 +4115,7 @@ focus_tree = {
 	focus = {
 		id = ENG_strike_mainland_europe_together
 		icon = GFX_focus_usa_focus_on_europe
-		cost = 10
+		cost = 5
 		prerequisite = {
 			#focus = ENG_maintaining_the_balance_of_power
 			focus = ENG_maintaining_imperial_integrity
