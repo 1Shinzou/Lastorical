@@ -1086,6 +1086,7 @@ fin_war_eco = {
 						tag = ARG #has a focus
 						tag = FIN #jibril nerf
 						tag = VEN
+						tag = CAN
 					}
 				} 
 			}
