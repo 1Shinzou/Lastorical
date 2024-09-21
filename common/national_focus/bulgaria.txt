@@ -6933,13 +6933,13 @@ focus_tree = {
 			has_country_flag = BUL_tsar_boris_is_dead_flag
 		}
 
+		
+
 		available = {
 
 		}
 
-		allow_branch = {
-			no
-		}
+		
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
@@ -7235,9 +7235,7 @@ focus_tree = {
 			is_subject = no
 		}
 
-		allow_branch = {
-			no
-		}
+	
 		
 		completion_reward = {
 			if = {
