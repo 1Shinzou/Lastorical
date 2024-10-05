@@ -741,9 +741,6 @@
 
 		}
 
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			806 = {
