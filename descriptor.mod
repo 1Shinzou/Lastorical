@@ -7,6 +7,6 @@ tags={
 	"Balance"
 }
 picture="thumbnail.png"
-name="Last Stand - LASTORICAL"
+name="!!! BETA !!! Last Stand - LASTORICAL !!! BETA !!!"
 supported_version="1.14.9"
 remote_file_id="3276047615"
