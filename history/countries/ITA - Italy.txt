@@ -736,7 +736,7 @@ if = {
 }
 
 
-set_convoys = 200
+set_convoys = 1000
 
 set_politics = {
 	ruling_party = fascism

@@ -12,7 +12,7 @@ set_technology = {
 	basic_train = 1
 }
 
-set_convoys = 10
+set_convoys = 300
 
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy
