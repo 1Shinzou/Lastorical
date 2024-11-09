@@ -17,23 +17,16 @@ ideas = {
 			allowed = {
 				or = {
 					original_tag = SPR
-					original_tag = POR
-					original_tag = FIN
+					
 				}
 			}
 
 			allowed_civil_war = {
 				always = yes
 			}
-
-			rule = {
-				can_send_volunteers = yes
-			}
-
+			
 			modifier = {
-				send_volunteer_size = 999
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -0.80
+				recruitable_population_factor = 0.05
 			}
 		}
 

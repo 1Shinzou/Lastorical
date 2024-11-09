@@ -1241,6 +1241,8 @@ sick = {
 		random = no
 		resistance_damage_to_garrison = -0.15
 		high_command_cost_factor = -0.15
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
 	}
 
 	caudillo_2 = {
@@ -1249,6 +1251,8 @@ sick = {
 		high_command_cost_factor = -0.15
 		max_command_power = 20
 		command_power_gain_mult = 0.25
+		army_core_attack_factor = 0.9
+		army_core_defence_factor = 0.9
 	}
 
 	the_lion_of_the_rif = {

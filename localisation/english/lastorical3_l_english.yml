@@ -27,3 +27,6 @@ italian_arms_discount:0 "Bresica Small Arms Industry"
 greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
 
  cat_air_bombs: "Bomb Locks"
+
+SPR_NO_AIRPORT:1 "NO AIR PORTS IN SPAIN ALLOWED"
+SPR_NO_AIRPORT_desc:0 "Airports arent allowed to be build in Spain, other countries also shouldnt build them up"
