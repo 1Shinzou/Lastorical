@@ -639,15 +639,16 @@ lastorical_capitulations_on_actions_collab = {
 				name = lastorical_gre
 			}
 			transfer_state = 731
+			add_state_core = 731
 			transfer_state = 184
+			add_state_core = 184
+		}
+		ITA = {
+			transfer_state = 182
 			transfer_state = 185
 			transfer_state = 47
 			transfer_state = 186
 			transfer_state = 187
-			transfer_state = 182
-		}
-		ITA = {
-			transfer_state = 182
 		}
 			every_state = {
                 limit = {
