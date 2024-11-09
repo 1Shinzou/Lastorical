@@ -3857,10 +3857,8 @@ focus_tree = {
 		}
 		relative_position_id = ENG_Provoke_british_patriotism
 		completion_reward = {
-			add_timed_idea = {
-				idea = ENG_colonial_investors
-				days = 1095
-			}
+			add_ideas = ENG_colonial_investors
+		
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_three
 				add_idea = ENG_state_of_the_economy_four
