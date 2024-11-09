@@ -779,6 +779,15 @@ on_actions = {
 
 	ITA = {
 		add_corps_commander_role = {
+			character = ITA_Mario_Robotti
+			traits = { infantry_leader trickster skilled_staffer commando }
+			skill=6
+			attack_skill=4
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=4
+		}
+		add_corps_commander_role = {
 			character = ITA_sebastiano_visconti_prasca
 			traits = { cavalry_leader armor_officer war_hero panzer_leader trait_engineer infantry_leader trickster organizer desert_fox trait_mountaineer }
 			skill=6
