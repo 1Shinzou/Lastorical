@@ -151,7 +151,7 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				army_CombinedArms_2
+				army_CombinedArms_1
 			}
 		}
 		corps_commander={
