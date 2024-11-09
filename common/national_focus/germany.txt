@@ -3037,7 +3037,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
+			num_of_factories > 99
 		}
 		ai_will_do = {
 			factor = 50
