@@ -448,6 +448,10 @@ lastorical_capitulations_on_actions = {
 		}
 		ITA = {
 			transfer_state = 182
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 186
+			transfer_state = 187
 		}
 		BUL = {
 			add_named_threat = { 
@@ -455,11 +459,10 @@ lastorical_capitulations_on_actions = {
 				name = lastorical_gre
 			}
 			transfer_state = 731
+			add_state_core = 731
 			transfer_state = 184
-			transfer_state = 185
-			transfer_state = 47
-			transfer_state = 186
-			transfer_state = 187
+			add_state_core = 184
+			
 			
 		}
 	} 
