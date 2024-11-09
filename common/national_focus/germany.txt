@@ -3652,7 +3652,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_train_panzergrenadiers
 				bonus = 1
-				ahead_reduction = 1
 				uses = 1
 				category = cat_mechanized_equipment
 			}
