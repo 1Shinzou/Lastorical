@@ -11432,7 +11432,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_PROPAGANDA}
 
 		completion_reward = {
-			add_political_power = 25
+			add_political_power = 150
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = konstantin_rokossovsky 
 			custom_effect_tooltip = available_theorist
