@@ -2867,147 +2867,17 @@ focus_tree = {
 
 	}
 	
-	focus = {
-		id = GER_prepare_france_invasion
-		icon = GFX_goal_generic_construction2
-		cost = 1
-		
-		prerequisite = {
-			focus = GER_anschluss
-		}
-		x = 8
-		y = 1
-		relative_position_id = GER_anschluss
-		available = {
-			# NOT = {
-			# 	has_idea = rhineland_challenge_met
-			# }
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 4
-				date<1939.01.01 #need to build up
-			}
-		}
-		bypass = {
-			OR = {
-				FRA = {
-					is_in_faction_with = GER
-				}
-				NOT = {
-					country_exists = FRA
-				}
-				GER = {
-					has_war_with = FRA
-				}
-				NOT = {
-					controls_state = 42
-					controls_state = 51
-				}
-			}
-		}
-		completion_reward = { 
-			random_owned_controlled_state = {
-				prioritize = { 51 989 965 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_controlled_state = {
-				prioritize = { 923 922 28 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_controlled_state = {
-				prioritize = { 42 55 8 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_timed_idea = {
-				idea = r56_ger_theater_prep
-				days = 30
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
 
-	}
 	focus = {
 		id = GER_west_wall
 		icon = GFX_focus_SWI_fortify_border_with_france
 		cost = 5.00
 		prerequisite = {
-			focus = GER_prepare_france_invasion
+			focus = GER_anschluss
 		}
-		x = 0
+		x = 7
 		y = 1
-		relative_position_id = GER_prepare_france_invasion
+		relative_position_id = GER_anschluss
 		ai_will_do = {
 			factor = 10
 		}
@@ -3914,9 +3784,9 @@ focus_tree = {
 			date > 1939.6.1
 			has_completed_focus = GER_danzig_or_war
 		}
-		x = -2
+		x = -1
 		y = 2
-		relative_position_id = GER_prepare_france_invasion
+		relative_position_id = GER_west_wall
 		will_lead_to_war_with = FRA
 		available = {
 			r56_script_i_am_sane = yes
@@ -4075,7 +3945,7 @@ focus_tree = {
 			focus = GER_anschluss
 		}
 		relative_position_id = GER_anschluss
-		x = -8
+		x = -7
 		y = 1
 		available = {
 			is_puppet = no
@@ -4362,7 +4232,7 @@ focus_tree = {
 		#}
 		
 		relative_position_id = GER_anschluss
-		x = 4
+		x = 3
 		y = 1
 		ai_will_do = {
 			factor = 9
@@ -4537,9 +4407,9 @@ focus_tree = {
 			focus = GER_prepare_poland_invasion
 		}
 	
-		x = 0
+		x = -3
 		y = 1
-		relative_position_id = GER_prepare_poland_invasion
+		relative_position_id = GER_anschluss
 		ai_will_do = {
 			factor = 10 #the AI does a dice roll I believe, making this a slightly higher priority than others doesnt help
 		}
@@ -4585,149 +4455,7 @@ focus_tree = {
 
 	}
 
-	focus = {
-		id = GER_prepare_poland_invasion
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 1
-		prerequisite = {
-			focus = GER_anschluss
-			
-		}
-		relative_position_id = GER_anschluss
-		x = -4
-		y = 1
-		available = {
-			country_exists = POL
-			has_civil_war = no
-		}
-		bypass = {
-			OR = {
-				has_completed_focus = GER_poland_friend
-				POL = {
-					is_in_faction_with = GER
-				}
-				NOT = {
-					country_exists = POL
-				}
-				GER = {
-					has_war_with = POL
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0.1
-				GER = {
-					has_offensive_war = yes
-				}
-			}
-			modifier = {
-				factor = 3
-				date < 1939.03.01
-			}
-			modifier = {
-				add = 1
-				AND = {
-					GER = {
-						has_war = NO
-					}
-					date > 1939.03.01
-				}
-			}
-		}
-		completion_reward = { 
-			add_state_claim = 85
-			random_owned_controlled_state = {
-				prioritize = { 63 68 66 67 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_controlled_state = {
-				prioritize = { 5 66 67 68 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-				
-			}
-			random_owned_controlled_state = {
-				prioritize = { 763 3288 85 67 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					free_building_slots = {
-						building = air_base
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_timed_idea = {
-				idea = r56_ger_theater_prep
-				days = 30
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
 
-	}
 
 	focus = {
 		id = GER_schwerepunkt_tactics
@@ -4767,14 +4495,14 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 1
 		prerequisite = {
-			focus = GER_prepare_poland_invasion	
+			focus = GER_demand_memel
 		}
 		prerequisite = {
 			focus = GER_anti_comitern_pact
 		}
-		relative_position_id = GER_prepare_poland_invasion
-		x = -2
-		y = 1
+		relative_position_id = GER_anschluss
+		x = -5
+		y = 2
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -4817,9 +4545,7 @@ focus_tree = {
 		prerequisite = {
 				focus = GER_mol_rib_pact
 			}
-			prerequisite = {
-				focus = GER_demand_memel
-			}
+		
 		will_lead_to_war_with = POL
 		available = {
 			date > 1939.6.1
@@ -4827,9 +4553,9 @@ focus_tree = {
 
 	
 		cancel_if_invalid = no
-		x = -1
-		y = 2
-		relative_position_id = GER_prepare_poland_invasion
+		x = 0
+		y = 1
+		relative_position_id = GER_mol_rib_pact
 		cost = 1
 		ai_will_do = {
 			factor = 10	
@@ -5513,64 +5239,7 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
 		}
 	}
-	focus = {
-		id = GER_develop_polish_territories
-		icon = GFX_focus_POL_the_four_year_plan
-		cost = 5.00
-		prerequisite = {
-			focus = GER_danzig_or_war
-		}
-		
-		x = 0
-		y = 1
-		relative_position_id = GER_danzig_or_war
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			controls_state = 807
-			controls_state = 85
-			controls_state = 10	
-		}
-		completion_reward = {
-			807 = {
-				limit = {
-					is_core_of = POL
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			10 = {
-				limit = {
-					is_core_of = POL
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY 
-		}
-
-	}
+	
 	focus = {
 		id = GER_construct_the_path_towards_the_beast
 		icon = GFX_goal_generic_soviet_construction
