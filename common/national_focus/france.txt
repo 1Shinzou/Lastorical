@@ -1702,7 +1702,8 @@
 				}
 				promote_leader = yes
 			}
-			set_country_flag = { flag = FRA_popular_front_cooldown value = 1 days = 360 } #fires strike event if labour laws not reformed in time
+			add_political_power = 50
+			#set_country_flag = { flag = FRA_popular_front_cooldown value = 1 days = 360 } #fires strike event if labour laws not reformed in time
 		}
 	}
 
@@ -1742,6 +1743,7 @@
 				}
 				remove_ideas = FRA_factory_strikes
 			}
+			add_political_power = 50
 		}
 	}
 	
