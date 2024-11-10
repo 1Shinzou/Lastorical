@@ -1194,7 +1194,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_fascist_economic_aid focus = SPA_spanish_austerity }
+		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports focus = SPA_spanish_austerity }
 		
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
@@ -1231,7 +1231,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_expand_the_axis_gold_trade }
 		
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
 		cost = 10
