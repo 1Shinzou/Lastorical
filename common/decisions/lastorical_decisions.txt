@@ -1011,7 +1011,7 @@ fin_war_eco = {
 	annex_hol= {
 		# icon = generic_operation
 		allowed = {
-			tag = RAJ
+			tag = AST
 		}
 		fire_only_once = yes
 		cost = 0
@@ -1032,7 +1032,7 @@ fin_war_eco = {
 		complete_effect = {
 			HOL = {
 				transfer_units_fraction = {
-					target = RAJ
+					target = AST
 					size = 1
 					stockpile_ratio = 1
 					army_ratio = 1
@@ -1043,7 +1043,7 @@ fin_war_eco = {
 					}
 				}
 			}
-			RAJ = {
+			AST = {
 				annex_country = {
 					target = HOL
 					transfer_troops = yes
@@ -1052,7 +1052,7 @@ fin_war_eco = {
 			every_state = {
 				limit = {
 					is_core_of = HOL
-					is_controlled_by = RAJ
+					is_controlled_by = AST
 				}
 				add_compliance = 100
 			}
