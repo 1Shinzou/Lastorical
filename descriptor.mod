@@ -8,5 +8,5 @@ tags={
 }
 picture="thumbnail.png"
 name="!!! BETA !!! Last Stand - LASTORICAL !!! BETA !!!"
-supported_version="1.14.9"
+supported_version="1.14.10"
 remote_file_id="3276047615"
